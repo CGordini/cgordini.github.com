@@ -14,10 +14,10 @@
 		
 		<div class="list-group-item-rounded">
 			
-			<ul class="list-unstyled list-group" ng-hide="aboutAll">
+			<ul class="list-unstyled list-group" ng-hide="hideAboutAll">
 				<!--PICs-->
-				<li class="list-group-item-rounded" ng-hide="aboutPics">
-					<div class="row fadein fadeout" ng-hide="aboutPics">
+				<li class="list-group-item-rounded" ng-hide="hideAboutPics">
+					<div class="row fadein fadeout" ng-hide="hideAboutPics">
 						<div class="picBlock text-center">
 							<img src="App/Images/grad.jpg" width="320" height="320" />
 
@@ -27,9 +27,9 @@
 
 				<br />
 
-				<li class="list-group-item-rounded" ng-hide="aboutDetails">
+				<li class="list-group-item-rounded" ng-hide="hideAboutDetails">
 					<!--TEXT-->
-					<div class="row fadein fadeout" ng-hide="aboutDetails">
+					<div class="row fadein fadeout" ng-hide="hideAboutDetails">
 
 						<div class="aboutBlock">
 							<div class="row">
@@ -53,8 +53,8 @@
 		<div class="row">
 			<div class="col-sm-3">
 				<button class="btn btn-default" ng-click="toggleShowAboutDetails()">
-					<span ng-show="aboutDetails">Show Details</span>
-					<span ng-hide="aboutDetails">Hide Details</span>
+					<span ng-show="hideAboutDetails">Show Details</span>
+					<span ng-hide="hideAboutDetails">Hide Details</span>
 				</button>
 			</div>
 			
@@ -62,8 +62,8 @@
 
 			<div class="col-sm-3 text-right">
 				<button class="btn btn-default" ng-click="toggleShowAboutPictures()">
-					<span ng-show="aboutPics">Show Pictures</span>
-					<span ng-hide="aboutPics">Hide Pictures</span>
+					<span ng-show="hideAboutPics">Show Pictures</span>
+					<span ng-hide="hideAboutPics">Hide Pictures</span>
 				</button>
 			</div>
 		</div>

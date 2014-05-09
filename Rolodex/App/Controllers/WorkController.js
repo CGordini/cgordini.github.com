@@ -3,24 +3,26 @@
 
     	$scope.sortWorkOrder = "-eYear";
 
-    	$scope.aboutDetails = "true";
-    	$scope.aboutPics = "false";
-	    $scope.aboutAll = "false";
+    	$scope.hideAboutDetails = true;
+    	$scope.hideAboutPics = false;
+	    $scope.hideAboutAll = false;
 
       $scope.toggleShowWorkDetails = function (work) {
         work.showDetails = !work.showDetails;
       };
 
       $scope.toggleShowAboutDetails = function () {
-      	$scope.aboutDetails = !$scope.aboutDetails;
-      	$scope.aboutAll = $scope.aboutPics && $scope.aboutDetails;
+      	$scope.hideAboutDetails = !$scope.hideAboutDetails;
+      	$scope.hideAboutAll = $scope.hideAboutPics && $scope.hideAboutDetails;
       };
 
       $scope.toggleShowAboutPictures = function () {
-      	$scope.aboutPics = !$scope.aboutPics;
-      	$scope.aboutAll = $scope.aboutPics && $scope.aboutDetails;
-      	console.log("aboutPics is ", $scope.aboutPics);
-	      console.log("aboutAll is ", $scope.aboutAll);
+      	console.log("hideAboutPics init is ", $scope.hideAboutPics);
+      	console.log("hideAboutAll init is ", $scope.hideAboutAll);
+      	$scope.hideAboutPics = !$scope.hideAboutPics;
+      	$scope.hideAboutAll = $scope.hideAboutPics && $scope.hideAboutDetails;
+      	console.log("hideAboutPics is ", $scope.hideAboutPics);
+	      console.log("hideAboutAll is ", $scope.hideAboutAll);
       };
 
       $scope.worksites =
