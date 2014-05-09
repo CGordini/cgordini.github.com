@@ -1,0 +1,6 @@
+C:\Users\u0160321\Desktop\Web Training\Day 4\Labs\03.08.DeleteContact\Rolodex\bin\Rolodex.dll.config
+C:\Users\u0160321\Desktop\Web Training\Day 4\Labs\03.08.DeleteContact\Rolodex\bin\Rolodex.dll
+C:\Users\u0160321\Desktop\Web Training\Day 4\Labs\03.08.DeleteContact\Rolodex\bin\Rolodex.pdb
+C:\Users\u0160321\Desktop\Web Training\Day 4\Labs\03.08.DeleteContact\Rolodex\obj\Debug\Rolodex.dll
+C:\Users\u0160321\Desktop\Web Training\Day 4\Labs\03.08.DeleteContact\Rolodex\obj\Debug\Rolodex.pdb
+C:\Users\u0160321\Desktop\Web Training\Day 4\Labs\03.08.DeleteContact\Rolodex\obj\Debug\MySite.csprojResolveAssemblyReference.cache
