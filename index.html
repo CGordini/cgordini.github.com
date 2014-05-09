@@ -3,13 +3,74 @@
 <head>
     <title>About Me</title>
 		<link href="site.css" rel="stylesheet" />
-		<link href="Content/extrastyle.css" rel="stylesheet" />
 </head>
 <body>
 	<div class="container" ng-controller="infoController">
+		
 		<h1>Cory Gordinier</h1>
+		
+		<!--ABOUT ME SECTION-->
+		<h3>About Me</h3>
+		
+		<div class="list-group-item-rounded">
+			
+			<ul class="list-unstyled list-group" ng-hide="aboutAll">
+				<!--PICs-->
+				<li class="list-group-item-rounded" ng-hide="aboutPics">
+					<div class="row fadein fadeout" ng-hide="aboutPics">
+						<div class="picBlock text-center">
+							<img src="App/Images/grad.jpg" width="320" height="320" />
 
-		<!--<div class="row">
+						</div>
+					</div>
+				</li>
+
+				<br />
+
+				<li class="list-group-item-rounded" ng-hide="aboutDetails">
+					<!--TEXT-->
+					<div class="row fadein fadeout" ng-hide="aboutDetails">
+
+						<div class="aboutBlock">
+							<div class="row">
+								<div class="col-sm-12 text-left">
+									I am an undergraduate at the University of Michigan: Ann Arbor, double-majoring in both Computer Science and Computer Engineering within the College of Engineering EECS department.<br /><br />
+
+									I have four years of industry experience, three of which involving the .NET C# platform. I will be starting my fifth year of the same in the summer.<br /><br />
+
+									I am currently an Instructive Aide (IA) for EECS 481 (see my interview on BTN!), and can be contacted via email for office hours and general advice as need be.<br /><br />
+
+									As a little about myself: I consider myself a fashionable guy, a car guy (own a 2007 Mustang), a beer snob (my favorite is Bell's Brewing from Kalamazoo, Michigan), and a musician. I have been playing guitar since middle school. Lastly, I am a Wolverine. Go Blue!
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</li>
+			</ul>
+			
+		<!--BUTTONS-->
+		<div class="row">
+			<div class="col-sm-3">
+				<button class="btn btn-default" ng-click="toggleShowAboutDetails()">
+					<span ng-show="aboutDetails">Show Details</span>
+					<span ng-hide="aboutDetails">Hide Details</span>
+				</button>
+			</div>
+			
+			<div class="col-sm-6"></div>
+
+			<div class="col-sm-3 text-right">
+				<button class="btn btn-default" ng-click="toggleShowAboutPictures()">
+					<span ng-show="aboutPics">Show Pictures</span>
+					<span ng-hide="aboutPics">Hide Pictures</span>
+				</button>
+			</div>
+		</div>
+
+		</div>
+		
+			<!--<div class="row">
 			<span class="col-sm-2 col-sm-offset-2">
 				Order by:
 			</span>
@@ -21,43 +82,15 @@
 				</select>
 			</span>
 		</div>-->
-		
-		<!--ABOUT ME SECTION-->
-		<h2>About Me</h2>
-		
-		<div class="list-group-item-rounded">
-			
-			<div class="row fadein fadeout" ng-hide="aboutDetails">
-				
-				<div class="row col-sm-12">
-						Lorem ipsum lorem ipsum lorem ipsum
-						Lorem ipsum lorem ipsum lorem ipsum
-						Lorem ipsum lorem ipsum lorem ipsum
-						Lorem ipsum lorem ipsum lorem ipsum
-						Lorem ipsum lorem ipsum lorem ipsum
-				</div>
 
-				</div>
-
-			<div class="row">
-				<div class="col-sm-3">
-					<button class="btn btn-default" ng-click="toggleShowAboutDetails(about)">
-						<span ng-show="aboutDetails">Show Details</span>
-						<span ng-hide="aboutDetails">Hide Details</span>
-					</button>
-				</div>
-			</div>
-
-		</div>
-		
 		<!--WORK HISTORY SECTION-->
-		<h2>Work History</h2>
+		<h3>Work History</h3>
 
 		<ul class="list-unstyled list-group">
 			<li class="list-group-item-rounded" ng-repeat="work in worksites | orderBy: sortWorkOrder">
 				<div>
 					<div class="row">
-						<span class="col-sm-8 lead text-left">
+						<span class="col-sm-12 lead text-left">
 							{{work.title}}, {{work.place}}
 						</span>
 						<div class="col-sm-6 text-left">
@@ -82,7 +115,8 @@
 					</div>
 
 					<br />
-
+					
+					<!--BUTTONS-->
 					<div class="row">
 						<div class="col-sm-3">
 							<button class="btn btn-default" ng-click="toggleShowWorkDetails(work)">
@@ -96,7 +130,8 @@
 			</li>
 		</ul>
 	</div>
-
+	
+	<!--SCRIPTS-->
 	<script src="Scripts/angular.js"></script>
 	<script src="Scripts/angular-animate.js"></script>
   <script src="App/app.js"></script>

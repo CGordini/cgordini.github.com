@@ -59,8 +59,18 @@
   <ItemGroup>
     <Content Include="App\app.js" />
     <Content Include="App\Controllers\WorkController.js" />
+    <Content Include="App\Images\beer.jpg" />
+    <Content Include="App\Images\denard.jpg" />
+    <Content Include="App\Images\fancy.jpg" />
+    <Content Include="App\Images\florida.jpg" />
+    <Content Include="App\Images\game.jpg" />
+    <Content Include="App\Images\glass.jpg" />
+    <Content Include="App\Images\grad.jpg" />
+    <Content Include="App\Images\guitar.jpg" />
+    <Content Include="App\Images\main.jpg" />
+    <Content Include="App\Images\mustang.jpg" />
+    <Content Include="App\Images\oberon.jpg" />
     <Content Include="App\Models\work.js" />
-    <Content Include="Content\extrastyle.css" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="jasmine\lib\jasmine-2.0.0\boot.js" />
     <Content Include="jasmine\lib\jasmine-2.0.0\console.js" />
