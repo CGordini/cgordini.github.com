@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="infoApp">
+<head>
+    <title>About Me</title>
+		<link href="site.css" rel="stylesheet" />
+		<link href="Content/extrastyle.css" rel="stylesheet" />
+</head>
+<body>
+	<div class="container" ng-controller="infoController">
+		<h1>Cory Gordinier</h1>
+
+		<!--<div class="row">
+			<span class="col-sm-2 col-sm-offset-2">
+				Order by:
+			</span>
+			<span class="col-sm-6">
+				<select ng-model="sortOrder">
+					<option value="state">State (Alphabetically)</option>
+					<option value="-eYear" selected>Ending Year</option>
+					<option value="sYear">Starting Year</option>
+				</select>
+			</span>
+		</div>-->
+		
+		<!--ABOUT ME SECTION-->
+		<h2>About Me</h2>
+		
+		<div class="list-group-item-rounded">
+			
+			
+			<div class="row">
+				<div class="col-sm-3">
+					<button class="btn btn-default" ng-click="toggleShowDetails(work)">
+						<span ng-hide="work.showDetails">Show Details</span>
+						<span ng-show="work.showDetails">Hide Details</span>
+					</button>
+				</div>
+			</div>
+
+		</div>
+		
+		<!--WORK HISTORY SECTION-->
+		<h2>Work History</h2>
+
+		<ul class="list-unstyled list-group">
+			<li class="list-group-item-rounded" ng-repeat="work in worksites | orderBy: sortOrder">
+				<div ng-hide="contact.editMode">
+					<div class="row">
+						<span class="col-sm-8 lead text-left">
+							{{work.title}}, {{work.place}}
+						</span>
+						<div class="col-sm-6 text-left">
+							{{work.sMonth}}&nbsp;{{work.sYear}}&nbsp;-&nbsp;{{work.eMonth}}&nbsp;{{work.eYear}}
+						</div>
+					</div>
+
+					<div class="row fadein fadeout" ng-show="work.showDetails">
+
+						<br />
+
+						<div class="col-sm-5 col-sm-offset-1">
+							<div class="row">
+								{{work.summary}}
+							</div>
+							<br/>
+							<div class="row">
+								{{work.address}}, <br />
+								{{work.city}}&nbsp;{{work.state}}
+							</div>
+						</div>
+					</div>
+
+					<br />
+
+					<div class="row">
+						<div class="col-sm-3">
+							<button class="btn btn-default" ng-click="toggleShowDetails(work)">
+								<span ng-hide="work.showDetails">Show Details</span>
+								<span ng-show="work.showDetails">Hide Details</span>
+							</button>
+						</div>
+					</div>
+
+				</div>
+			</li>
+		</ul>
+	</div>
+
+	<script src="Scripts/angular.js"></script>
+	<script src="Scripts/angular-animate.js"></script>
+  <script src="App/app.js"></script>
+  <script src="App/Models/work.js"></script>
+	<script src="App/Controllers/WorkController.js"></script>
+
+</body>
+</html>
