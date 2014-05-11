@@ -5,7 +5,7 @@
 		<link href="site.css" rel="stylesheet" />
 </head>
 <body>
-	<div class="container" ng-controller="infoController">
+	<div class="container" id="main" ng-controller="infoController">
 		
 		<h1>Cory Gordinier</h1>
 		
@@ -17,12 +17,33 @@
 			<ul class="list-unstyled list-group" ng-hide="hideAboutAll">
 				<!--PICs-->
 				<li class="list-group-item-rounded" ng-hide="hideAboutPics">
-					<div class="row fadein fadeout" ng-hide="hideAboutPics">
-						<div class="picBlock text-center">
-							<img src="App/Images/grad.jpg" width="320" height="320" />
+				    <div class="row fadein fadeout" ng-hide="hideAboutPics">
+				        <div class="jcarousel-wrapper">
+				            <div class="jcarousel">
+				                <ul>
+				                    <li class ="text-center"><img src="App/Images/img0.jpg" width="320" height="320" alt=""></li>
+				                    <li class ="text-center"><img src="App/Images/img1.jpg" width="320" height="320" alt=""></li>
+				                    <li class ="text-center"><img src="App/Images/img2.jpg" width="320" height="320" alt=""></li>
+				                    <li class ="text-center"><img src="App/Images/img3.jpg" width="320" height="320" alt=""></li>
+				                    <li class ="text-center"><img src="App/Images/img4.jpg" width="320" height="320" alt=""></li>
+				                    <li class ="text-center"><img src="App/Images/img5.jpg" width="320" height="320" alt=""></li>
+				                    <li class ="text-center"><img src="App/Images/img6.jpg" width="320" height="320" alt=""></li>
+				                    <li class ="text-center"><img src="App/Images/img7.jpg" width="320" height="320" alt=""></li>
+				                    <li class ="text-center"><img src="App/Images/img8.jpg" width="320" height="320" alt=""></li>
+				                    <li class ="text-center"><img src="App/Images/img9.jpg" width="320" height="320" alt=""></li>
 
-						</div>
-					</div>
+				                </ul>
+				            </div>
+
+				            <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+				            <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+                
+				            <p class="jcarousel-pagination">
+                    
+				            </p>
+				        </div>
+				    </div>
+                                   
 				</li>
 
 				<br />
@@ -85,57 +106,75 @@
 
 		<!--WORK HISTORY SECTION-->
 		<h3>Work History</h3>
+        
+	    <div class="list-group-item-rounded">
 
-		<ul class="list-unstyled list-group">
-			<li class="list-group-item-rounded" ng-repeat="work in worksites | orderBy: sortWorkOrder">
-				<div>
-					<div class="row">
-						<span class="col-sm-12 lead text-left">
-							{{work.title}}, {{work.place}}
-						</span>
-						<div class="col-sm-6 text-left">
-							{{work.sMonth}}&nbsp;{{work.sYear}}&nbsp;-&nbsp;{{work.eMonth}}&nbsp;{{work.eYear}}
-						</div>
-					</div>
+	        <ul class="list-unstyled list-group" ng-hide="hideWorkAll">
+	            <li class="list-group-item-rounded" ng-repeat="work in worksites | orderBy: sortWorkOrder">
+	                <div>
+	                    <div class="row">
+	                        <span class="col-sm-12 lead text-left">
+	                            {{work.title}}, {{work.place}}
+	                        </span>
+	                        <div class="col-sm-6 text-left">
+	                            {{work.sMonth}}&nbsp;{{work.sYear}}&nbsp;-&nbsp;{{work.eMonth}}&nbsp;{{work.eYear}}
+	                        </div>
+	                    </div>
 
-					<div class="row fadein fadeout" ng-show="work.showDetails">
+	                    <div class="row fadein fadeout" ng-show="work.showDetails">
 
-						<br />
+	                        <br />
 
-						<div class="col-sm-5 col-sm-offset-1">
-							<div class="row">
-								{{work.summary}}
-							</div>
-							<br/>
-							<div class="row">
-								{{work.address}}, <br />
-								{{work.city}}&nbsp;{{work.state}}
-							</div>
-						</div>
-					</div>
+	                        <div class="col-sm-5 col-sm-offset-1">
+	                            <div class="row">
+	                                {{work.summary}}
+	                            </div>
+	                            <br/>
+	                            <div class="row">
+	                                {{work.address}}, <br />
+	                                {{work.city}}&nbsp;{{work.state}}
+	                            </div>
+	                        </div>
+	                    </div>
 
-					<br />
+	                    <br />
 					
-					<!--BUTTONS-->
-					<div class="row">
-						<div class="col-sm-3">
-							<button class="btn btn-default" ng-click="toggleShowWorkDetails(work)">
-								<span ng-hide="work.showDetails">Show Details</span>
-								<span ng-show="work.showDetails">Hide Details</span>
-							</button>
-						</div>
-					</div>
+	                    <!--BUTTONS-->
+	                    <div class="row">
+	                        <div class="col-sm-3">
+	                            <button class="btn btn-default" ng-click="toggleShowWorkDetails(work)">
+	                                <span ng-hide="work.showDetails">Show Work</span>
+	                                <span ng-show="work.showDetails">Hide Work</span>
+	                            </button>
+	                        </div>
+	                    </div>
 
-				</div>
-			</li>
-		</ul>
+	                </div>
+
+	            </li>
+	        </ul>
+            
+            <!--BUTTONS-->
+	        <div class="row">
+	            <div class="col-sm-3">
+	                <button class="btn btn-default" ng-click="toggleShowAllWorkDetails()">
+	                    <span ng-show="hideWorkAll">Show Details</span>
+	                    <span ng-hide="hideWorkAll">Hide Details</span>
+	                </button>
+	            </div>
+	        </div>
+
+	    </div>
 	</div>
 	
-	<!--SCRIPTS-->
-	<script src="Scripts/angular.js"></script>
+    <!--SCRIPTS-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="Scripts/jquery.jcarousel.js"></script>
+    <script type="text/javascript" src="Scripts/jcarousel.basic.js"></script>
+    <script src="Scripts/angular.js"></script>
 	<script src="Scripts/angular-animate.js"></script>
-  <script src="App/app.js"></script>
-  <script src="App/Models/work.js"></script>
+    <script src="App/app.js"></script>
+    <script src="App/Models/work.js"></script>
 	<script src="App/Controllers/WorkController.js"></script>
 
 </body>

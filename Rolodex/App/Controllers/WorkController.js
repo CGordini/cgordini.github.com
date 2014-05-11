@@ -5,10 +5,16 @@
 
     	$scope.hideAboutDetails = true;
     	$scope.hideAboutPics = false;
-	    $scope.hideAboutAll = false;
+    	$scope.hideAboutAll = false;
+
+        $scope.hideWorkAll = true;
 
       $scope.toggleShowWorkDetails = function (work) {
         work.showDetails = !work.showDetails;
+      };
+        
+      $scope.toggleShowAllWorkDetails = function () {
+          $scope.hideWorkAll = !$scope.hideWorkAll;
       };
 
       $scope.toggleShowAboutDetails = function () {

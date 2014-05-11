@@ -59,17 +59,17 @@
   <ItemGroup>
     <Content Include="App\app.js" />
     <Content Include="App\Controllers\WorkController.js" />
-    <Content Include="App\Images\beer.jpg" />
-    <Content Include="App\Images\denard.jpg" />
-    <Content Include="App\Images\fancy.jpg" />
-    <Content Include="App\Images\florida.jpg" />
+    <Content Include="App\Images\img3.jpg" />
+    <Content Include="App\Images\img1.jpg" />
+    <Content Include="App\Images\img8.jpg" />
+    <Content Include="App\Images\img2.jpg" />
     <Content Include="App\Images\game.jpg" />
-    <Content Include="App\Images\glass.jpg" />
-    <Content Include="App\Images\grad.jpg" />
-    <Content Include="App\Images\guitar.jpg" />
-    <Content Include="App\Images\main.jpg" />
-    <Content Include="App\Images\mustang.jpg" />
-    <Content Include="App\Images\oberon.jpg" />
+    <Content Include="App\Images\img7.jpg" />
+    <Content Include="App\Images\img0.jpg" />
+    <Content Include="App\Images\img9.jpg" />
+    <Content Include="App\Images\img4.jpg" />
+    <Content Include="App\Images\img6.jpg" />
+    <Content Include="App\Images\img5.jpg" />
     <Content Include="App\Models\work.js" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="jasmine\lib\jasmine-2.0.0\boot.js" />
@@ -401,9 +401,11 @@
     <Content Include="Scripts\i18n\angular-locale_zh.js" />
     <Content Include="Scripts\i18n\angular-locale_zu-za.js" />
     <Content Include="Scripts\i18n\angular-locale_zu.js" />
+    <Content Include="Scripts\jcarousel.basic.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Scripts\jquery.jcarousel.js" />
     <Content Include="site.css">
       <DependentUpon>site.less</DependentUpon>
     </Content>
@@ -418,6 +420,10 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="site.min.css">
+      <DependentUpon>site.less</DependentUpon>
+    </Content>
+    <Content Include="weblysleekuisl.ttf" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="index.html" />
