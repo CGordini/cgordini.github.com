@@ -1,181 +1,159 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" ng-app="infoApp">
 <head>
+    <link href="site.css" rel="stylesheet" />
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
     <title>About Me</title>
-		<link href="site.css" rel="stylesheet" />
 </head>
 <body>
-	<div class="container" id="main" ng-controller="infoController">
-		
-		<h1>Cory Gordinier</h1>
-		
-		<!--ABOUT ME SECTION-->
-		<h3>About Me</h3>
-		
-		<div class="list-group-item-rounded">
-			
-			<ul class="list-unstyled list-group" ng-hide="hideAboutAll">
-				<!--PICs-->
-				<li class="list-group-item-rounded" ng-hide="hideAboutPics">
-				    <div class="row fadein fadeout" ng-hide="hideAboutPics">
-				        <div class="jcarousel-wrapper">
-				            <div class="jcarousel">
-				                <ul>
-				                    <li class ="text-center"><img src="App/Images/img0.jpg" width="320" height="320" alt=""></li>
-				                    <li class ="text-center"><img src="App/Images/img1.jpg" width="320" height="320" alt=""></li>
-				                    <li class ="text-center"><img src="App/Images/img2.jpg" width="320" height="320" alt=""></li>
-				                    <li class ="text-center"><img src="App/Images/img3.jpg" width="320" height="320" alt=""></li>
-				                    <li class ="text-center"><img src="App/Images/img4.jpg" width="320" height="320" alt=""></li>
-				                    <li class ="text-center"><img src="App/Images/img5.jpg" width="320" height="320" alt=""></li>
-				                    <li class ="text-center"><img src="App/Images/img6.jpg" width="320" height="320" alt=""></li>
-				                    <li class ="text-center"><img src="App/Images/img7.jpg" width="320" height="320" alt=""></li>
-				                    <li class ="text-center"><img src="App/Images/img8.jpg" width="320" height="320" alt=""></li>
-				                    <li class ="text-center"><img src="App/Images/img9.jpg" width="320" height="320" alt=""></li>
-
-				                </ul>
-				            </div>
-
-				            <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
-				            <a href="#" class="jcarousel-control-next">&rsaquo;</a>
-                
-				            <p class="jcarousel-pagination">
-                    
-				            </p>
-				        </div>
-				    </div>
-                                   
-				</li>
-
-				<br />
-
-				<li class="list-group-item-rounded" ng-hide="hideAboutDetails">
-					<!--TEXT-->
-					<div class="row fadein fadeout" ng-hide="hideAboutDetails">
-
-						<div class="aboutBlock">
-							<div class="row">
-								<div class="col-sm-12 text-left">
-									I am an undergraduate at the University of Michigan: Ann Arbor, double-majoring in both Computer Science and Computer Engineering within the College of Engineering EECS department.<br /><br />
-
-									I have four years of industry experience, three of which involving the .NET C# platform. I will be starting my fifth year of the same in the summer.<br /><br />
-
-									I am currently an Instructive Aide (IA) for EECS 481 (see my interview on BTN!), and can be contacted via email for office hours and general advice as need be.<br /><br />
-
-									As a little about myself: I consider myself a fashionable guy, a car guy (own a 2007 Mustang), a beer snob (my favorite is Bell's Brewing from Kalamazoo, Michigan), and a musician. I have been playing guitar since middle school. Lastly, I am a Wolverine. Go Blue!
-								</div>
-							</div>
-						</div>
-
-					</div>
-				</li>
-			</ul>
-			
-		<!--BUTTONS-->
-		<div class="row">
-			<div class="col-sm-3">
-				<button class="btn btn-default" ng-click="toggleShowAboutDetails()">
-					<span ng-show="hideAboutDetails">Show Details</span>
-					<span ng-hide="hideAboutDetails">Hide Details</span>
-				</button>
-			</div>
-			
-			<div class="col-sm-6"></div>
-
-			<div class="col-sm-3 text-right">
-				<button class="btn btn-default" ng-click="toggleShowAboutPictures()">
-					<span ng-show="hideAboutPics">Show Pictures</span>
-					<span ng-hide="hideAboutPics">Hide Pictures</span>
-				</button>
-			</div>
-		</div>
-
-		</div>
-		
-			<!--<div class="row">
-			<span class="col-sm-2 col-sm-offset-2">
-				Order by:
-			</span>
-			<span class="col-sm-6">
-				<select ng-model="sortWorkOrder">
-					<option value="state">State (Alphabetically)</option>
-					<option value="-eYear" selected>Ending Year</option>
-					<option value="sYear">Starting Year</option>
-				</select>
-			</span>
-		</div>-->
-
-		<!--WORK HISTORY SECTION-->
-		<h3>Work History</h3>
+    <div class="container" id="main" ng-controller="infoController">
         
-	    <div class="list-group-item-rounded">
+        <h1>Cory Gordinier</h1>
+        
+        <!--ABOUT ME SECTION-->
+        <h3>About Me</h3>
+        
+        <div class="list-group-item-rounded">
+            
+            <ul class="list-unstyled list-group" ng-hide="hideAboutAll">
+                <!--PICs-->
+                <li class="list-group-item-rounded" ng-hide="hideAboutPics">
+                    <div class="row fadein fadeout" ng-hide="hideAboutPics">
+                        <div cjgcarousel></div>
+                    </div>             
+                </li>
 
-	        <ul class="list-unstyled list-group" ng-hide="hideWorkAll">
-	            <li class="list-group-item-rounded" ng-repeat="work in worksites | orderBy: sortWorkOrder">
-	                <div>
-	                    <div class="row">
-	                        <span class="col-sm-12 lead text-left">
-	                            {{work.title}}, {{work.place}}
-	                        </span>
-	                        <div class="col-sm-6 text-left">
-	                            {{work.sMonth}}&nbsp;{{work.sYear}}&nbsp;-&nbsp;{{work.eMonth}}&nbsp;{{work.eYear}}
-	                        </div>
-	                    </div>
+                <br />
 
-	                    <div class="row fadein fadeout" ng-show="work.showDetails">
+                <li class="list-group-item-rounded" ng-hide="hideAboutDetails">
+                    <!--TEXT-->
+                    <div class="row fadein fadeout" ng-hide="hideAboutDetails">
 
-	                        <br />
+                        <div class="aboutBlock">
+                            <div class="row">
+                                <div class="col-sm-12 text-left">
+                                    I am an undergraduate at the University of Michigan: Ann Arbor, double-majoring in both Computer Science and Computer Engineering within the College of Engineering EECS department.<br /><br />
 
-	                        <div class="col-sm-5 col-sm-offset-1">
-	                            <div class="row">
-	                                {{work.summary}}
-	                            </div>
-	                            <br/>
-	                            <div class="row">
-	                                {{work.address}}, <br />
-	                                {{work.city}}&nbsp;{{work.state}}
-	                            </div>
-	                        </div>
-	                    </div>
+                                    I have four years of industry experience, three of which involving the .NET C# platform. I will be starting my fifth year of the same in the summer.<br /><br />
 
-	                    <br />
-					
-	                    <!--BUTTONS-->
-	                    <div class="row">
-	                        <div class="col-sm-3">
-	                            <button class="btn btn-default" ng-click="toggleShowWorkDetails(work)">
-	                                <span ng-hide="work.showDetails">Show Work</span>
-	                                <span ng-show="work.showDetails">Hide Work</span>
-	                            </button>
-	                        </div>
-	                    </div>
+                                    I am currently an Instructive Aide (IA) for EECS 481 (see my interview on BTN!), and can be contacted via email for office hours and general advice as need be.<br /><br />
 
-	                </div>
+                                    As a little about myself: I consider myself a fashionable guy, a car guy (own a 2007 Mustang), a beer snob (my favorite is Bell's Brewing from Kalamazoo, Michigan), and a musician. I have been playing guitar since middle school. Lastly, I am a Wolverine. Go Blue!
+                                </div>
+                            </div>
+                        </div>
 
-	            </li>
-	        </ul>
+                    </div>
+                </li>
+            </ul>
+            
+        <!--BUTTONS-->
+        <div class="row">
+            <div class="col-sm-3">
+                <button class="btn btn-default" ng-click="toggleShowAboutDetails()">
+                    <span ng-show="hideAboutDetails">Show Details</span>
+                    <span ng-hide="hideAboutDetails">Hide Details</span>
+                </button>
+            </div>
+            
+            <div class="col-sm-6"></div>
+
+            <div class="col-sm-3 text-right">
+                <button class="btn btn-default" ng-click="toggleShowAboutPictures()">
+                    <span ng-show="hideAboutPics">Show Pictures</span>
+                    <span ng-hide="hideAboutPics">Hide Pictures</span>
+                </button>
+            </div>
+        </div>
+
+        </div>
+        
+            <!--<div class="row">
+            <span class="col-sm-2 col-sm-offset-2">
+                Order by:
+            </span>
+            <span class="col-sm-6">
+                <select ng-model="sortWorkOrder">
+                    <option value="state">State (Alphabetically)</option>
+                    <option value="-eYear" selected>Ending Year</option>
+                    <option value="sYear">Starting Year</option>
+                </select>
+            </span>
+        </div>-->
+
+        <!--WORK HISTORY SECTION-->
+        <h3>Work History</h3>
+        
+        <div class="list-group-item-rounded">
+
+            <ul class="list-unstyled list-group" ng-hide="hideWorkAll">
+                <li class="list-group-item-rounded" ng-repeat="work in worksites | orderBy: sortWorkOrder">
+                    <div>
+                        <div class="row">
+                            <span class="col-sm-12 lead text-left">
+                                {{work.title}}, {{work.place}}
+                            </span>
+                            <div class="col-sm-6 text-left">
+                                {{work.sMonth}}&nbsp;{{work.sYear}}&nbsp;-&nbsp;{{work.eMonth}}&nbsp;{{work.eYear}}
+                            </div>
+                        </div>
+
+                        <div class="row fadein fadeout" ng-show="work.showDetails">
+
+                            <br />
+
+                            <div class="col-sm-5 col-sm-offset-1">
+                                <div class="row">
+                                    {{work.summary}}
+                                </div>
+                                <br/>
+                                <div class="row">
+                                    {{work.address}}, <br />
+                                    {{work.city}}&nbsp;{{work.state}}
+                                </div>
+                            </div>
+                        </div>
+
+                        <br />
+                    
+                        <!--BUTTONS-->
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <button class="btn btn-default" ng-click="toggleShowWorkDetails(work)">
+                                    <span ng-hide="work.showDetails">Show Work</span>
+                                    <span ng-show="work.showDetails">Hide Work</span>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </li>
+            </ul>
             
             <!--BUTTONS-->
-	        <div class="row">
-	            <div class="col-sm-3">
-	                <button class="btn btn-default" ng-click="toggleShowAllWorkDetails()">
-	                    <span ng-show="hideWorkAll">Show Details</span>
-	                    <span ng-hide="hideWorkAll">Hide Details</span>
-	                </button>
-	            </div>
-	        </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <button class="btn btn-default" ng-click="toggleShowAllWorkDetails()">
+                        <span ng-show="hideWorkAll">Show Details</span>
+                        <span ng-hide="hideWorkAll">Hide Details</span>
+                    </button>
+                </div>
+            </div>
 
-	    </div>
-	</div>
-	
+        </div>
+    </div>
+    
     <!--SCRIPTS-->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="Scripts/jquery.jcarousel.js"></script>
-    <script type="text/javascript" src="Scripts/jcarousel.basic.js"></script>
-    <script src="Scripts/angular.js"></script>
-	<script src="Scripts/angular-animate.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="Scripts/angular-animate.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
     <script src="App/app.js"></script>
     <script src="App/Models/work.js"></script>
-	<script src="App/Controllers/WorkController.js"></script>
+    <script src="App/Controllers/WorkController.js"></script>
+    <script src="App/Directives/cjgcarousel.js"></script>
 
 </body>
 </html>
