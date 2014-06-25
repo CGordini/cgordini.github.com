@@ -1,9 +1,9 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" ng-app="infoApp">
 <head>
-    <link href="site.css" rel="stylesheet" />
-    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bower_components/angular/angular-csp.css" />
+    <link rel="stylesheet" href="site.css" />
 
     <title>About Me</title>
 </head>
@@ -43,7 +43,9 @@
                                     My work for the class was the subject of <a href="http://btn.com/2014/02/14/btn-livebig-michigan-premiere-tonight/">
                                     a Big Ten interview</a> as well as <a href="http://dme.engin.umich.edu/grace/#-home">a University of Michigan informative video.</a> <br /><br />
 
-                                    As a little about myself: I consider myself a fashionable guy, a car guy (own a 2007 Mustang),<br /a> a beer snob (my favorite is Bell's Brewing from Kalamazoo, Michigan), and a musician. I have been playing guitar since middle school. Lastly, I am a Wolverine. Go Blue!
+                                    As a little about myself: I consider myself a fashionable guy, a car guy (own a 2007 Mustang),<br /a> a beer snob (my favorite is Bell's Brewing from Kalamazoo, Michigan), and a musician. I have been playing guitar since middle school. 
+
+                                    <br/><br/>Lastly, I am a Wolverine. Go Blue!
                                 </div>
                             </div>
                         </div>
@@ -52,91 +54,36 @@
                 </li>
             </ul>
             
-        <!--BUTTONS-->
-        <div class="row">
-            <div class="col-sm-3">
-                <button class="btn btn-default" ng-click="toggleShowAboutDetails()">
-                    <span ng-show="hideAboutDetails">Show Details</span>
-                    <span ng-hide="hideAboutDetails">Hide Details</span>
-                </button>
-            </div>
-            
-            <div class="col-sm-6"></div>
+            <!--BUTTONS-->
+            <div class="row">
+                <div class="col-sm-3">
+                    <button class="btn btn-default" ng-click="toggleShowAboutDetails()">
+                        <span ng-show="hideAboutDetails">Show Details</span>
+                        <span ng-hide="hideAboutDetails">Hide Details</span>
+                    </button>
+                </div>
+                
+                <div class="col-sm-6"></div>
 
-            <div class="col-sm-3 text-right">
-                <button class="btn btn-default" ng-click="toggleShowAboutPictures()">
-                    <span ng-show="hideAboutPics">Show Pictures</span>
-                    <span ng-hide="hideAboutPics">Hide Pictures</span>
-                </button>
+                <div class="col-sm-3 text-right">
+                    <button class="btn btn-default" ng-click="toggleShowAboutPictures()">
+                        <span ng-show="hideAboutPics">Show Pictures</span>
+                        <span ng-hide="hideAboutPics">Hide Pictures</span>
+                    </button>
+                </div>
             </div>
-        </div>
 
         </div>
         
-            <!--<div class="row">
-            <span class="col-sm-2 col-sm-offset-2">
-                Order by:
-            </span>
-            <span class="col-sm-6">
-                <select ng-model="sortWorkOrder">
-                    <option value="state">State (Alphabetically)</option>
-                    <option value="-eYear" selected>Ending Year</option>
-                    <option value="sYear">Starting Year</option>
-                </select>
-            </span>
-        </div>-->
-
         <!--WORK HISTORY SECTION-->
         <h3>Work History</h3>
         
         <div class="list-group-item-rounded">
 
-            <ul class="list-unstyled list-group" ng-hide="hideWorkAll">
-                <li class="list-group-item-rounded" ng-repeat="work in worksites | orderBy: sortWorkOrder">
-                    <div>
-                        <div class="row">
-                            <span class="col-sm-12 lead text-left">
-                                {{work.title}}, {{work.place}}
-                            </span>
-                            <div class="col-sm-6 text-left">
-                                {{work.sMonth}}&nbsp;{{work.sYear}}&nbsp;-&nbsp;{{work.eMonth}}&nbsp;{{work.eYear}}
-                            </div>
-                        </div>
-
-                        <div class="row fadein fadeout" ng-show="work.showDetails">
-
-                            <br />
-
-                            <div class="col-sm-5 col-sm-offset-1">
-                                <div class="row">
-                                    {{work.summary}}
-                                </div>
-                                <br/>
-                                <div class="row">
-                                    {{work.address}}, <br />
-                                    {{work.city}}&nbsp;{{work.state}}
-                                </div>
-                            </div>
-                        </div>
-
-                        <br />
-                    
-                        <!--BUTTONS-->
-                        <div class="row">
-                            <div class="col-sm-3">
-                                <button class="btn btn-default" ng-click="toggleShowWorkDetails(work)">
-                                    <span ng-hide="work.showDetails">Show Work</span>
-                                    <span ng-show="work.showDetails">Hide Work</span>
-                                </button>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </li>
-            </ul>
+            <cjgaccordian sites="Worksites">
+            </cjgaccordian>
             
-            <!--BUTTONS-->
+            <!--BUTTONS--
             <div class="row">
                 <div class="col-sm-3">
                     <button class="btn btn-default" ng-click="toggleShowAllWorkDetails()">
@@ -144,19 +91,23 @@
                         <span ng-hide="hideWorkAll">Hide Details</span>
                     </button>
                 </div>
-            </div>
+            </div>-->
 
         </div>
+
     </div>
-    
-    <!--SCRIPTS-->
+
+
     <script src="bower_components/angular/angular.js"></script>
-    <script src="Scripts/angular-animate.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
     <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+
     <script src="App/app.js"></script>
     <script src="App/Models/work.js"></script>
+    <script src="App/Models/worksites.js"></script>
     <script src="App/Controllers/WorkController.js"></script>
     <script src="App/Directives/cjgcarousel.js"></script>
+    <script src="App/Directives/cjgaccordian.js"></script>
 
 </body>
 </html>
