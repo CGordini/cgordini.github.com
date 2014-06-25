@@ -9,6 +9,12 @@
 
         $scope.hideWorkAll = true;
 
+        $scope.oneAtATime = false;
+
+        $scope.status = {
+            isFirstOpen: true,
+        };
+
         $scope.toggleShowWorkDetails = function (work) {
             work.showDetails = !work.showDetails;
         };

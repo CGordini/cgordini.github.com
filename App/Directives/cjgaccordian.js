@@ -3,7 +3,7 @@ angular.module('infoApp').directive('cjgaccordian', function(){
             restrict: 'E',
             scope: { worksites: '=sites'},
             template: '<accordion close-others="true">' +
-                           '<accordion-group heading="{{work.title}}, {{work.place}}" ng-repeat="work in getSites()">' +
+                           '<accordion-group class="subPanel" heading="{{work.title}}, {{work.place}}" ng-repeat="work in getSites()">' +
                             	'<div class="col-sm-6 text-left">' +
                                 	'{{work.sMonth}}&nbsp;{{work.sYear}}&nbsp;-&nbsp;{{work.eMonth}}&nbsp;{{work.eYear}}' +
                             	'</div>' +

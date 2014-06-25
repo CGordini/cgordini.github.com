@@ -12,89 +12,96 @@
         
         <h1>Cory Gordinier</h1>
         
-        <!--ABOUT ME SECTION-->
-        <h3>About Me</h3>
-        
-        <div class="list-group-item-rounded">
+        <accordion close-others="oneAtATime">
+
+            <!--ABOUT ME SECTION-->
+            <accordion-group class="mainPanel" heading="About Me" is-open="status.isFirstOpen">
             
-            <ul class="list-unstyled list-group" ng-hide="hideAboutAll">
-                <!--PICs-->
-                <li class="list-group-item-rounded" ng-hide="hideAboutPics">
-                    <div class="row fadein fadeout" ng-hide="hideAboutPics">
-                        <div cjgcarousel></div>
-                    </div>             
-                </li>
+                <div class="list-group-item-rounded">
+                    
+                    <ul class="list-unstyled list-group" ng-hide="hideAboutAll">
+                        <!--PICs-->
+                        <li class="list-group-item-rounded" ng-hide="hideAboutPics">
+                            <div class="row fadein fadeout" ng-hide="hideAboutPics">
+                                <div cjgcarousel></div>
+                            </div>             
+                        </li>
 
-                <br />
+                        <br />
 
-                <li class="list-group-item-rounded" ng-hide="hideAboutDetails">
-                    <!--TEXT-->
-                    <div class="row fadein fadeout" ng-hide="hideAboutDetails">
+                        <li class="list-group-item-rounded" ng-hide="hideAboutDetails">
+                            <!--TEXT-->
+                            <div class="row fadein fadeout" ng-hide="hideAboutDetails">
 
-                        <div class="aboutBlock">
-                            <div class="row">
-                                <div class="col-sm-12 text-left">
-                                    I am a graduate of the University of Michigan: Ann Arbor, with a Bachelor of Science in Engineering in Computer Science.<br /><br />
+                                <div class="aboutBlock">
+                                    <div class="row">
+                                        <div class="col-sm-12 text-left">
+                                            I am a graduate of the University of Michigan: Ann Arbor, with a Bachelor of Science in Engineering in Computer Science.<br /><br />
 
-                                    I have four years of industry experience, three of which involving the .NET C# platform.<br /a>
-                                    I am full-time Software Engineer, working for <a href="http://www.reuters.com">Thomson Reuters</a> as of Spring 2014.<br /><br />
+                                            I have four years of industry experience, three of which involving the .NET C# platform.<br /a>
+                                            I am full-time Software Engineer, working for <a href="http://www.reuters.com">Thomson Reuters</a> as of Spring 2014.<br /><br />
 
-                                    I was previously an Instructive Aide (IA) for EECS 481, the Software Engineering course at the University of Michigan.<br />
-                                    My work for the class was the subject of <a href="http://btn.com/2014/02/14/btn-livebig-michigan-premiere-tonight/">
-                                    a Big Ten interview</a> as well as <a href="http://dme.engin.umich.edu/grace/#-home">a University of Michigan informative video.</a> <br /><br />
+                                            I was previously an Instructive Aide (IA) for EECS 481, the Software Engineering course at the University of Michigan.<br />
+                                            My work for the class was the subject of <a href="http://btn.com/2014/02/14/btn-livebig-michigan-premiere-tonight/">
+                                            a Big Ten interview</a> as well as <a href="http://dme.engin.umich.edu/grace/#-home">a University of Michigan informative video.</a> <br /><br />
 
-                                    As a little about myself: I consider myself a fashionable guy, a car guy (own a 2007 Mustang),<br /a> a beer snob (my favorite is Bell's Brewing from Kalamazoo, Michigan), and a musician. I have been playing guitar since middle school. 
+                                            As a little about myself: I consider myself a fashionable guy, a car guy (own a 2007 Mustang),<br /a> a beer snob (my favorite is Bell's Brewing from Kalamazoo, Michigan), and a musician. I have been playing guitar since middle school. 
 
-                                    <br/><br/>Lastly, I am a Wolverine. Go Blue!
+                                            <br/><br/>Lastly, I am a Wolverine. Go Blue!
+                                        </div>
+                                    </div>
                                 </div>
+
                             </div>
+                        </li>
+                    </ul>
+                    
+                    <!--BUTTONS-->
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <button class="btn btn-default" ng-click="toggleShowAboutDetails()">
+                                <span ng-show="hideAboutDetails">Show Details</span>
+                                <span ng-hide="hideAboutDetails">Hide Details</span>
+                            </button>
                         </div>
+                        
+                        <div class="col-sm-6"></div>
 
+                        <div class="col-sm-3 text-right">
+                            <button class="btn btn-default" ng-click="toggleShowAboutPictures()">
+                                <span ng-show="hideAboutPics">Show Pictures</span>
+                                <span ng-hide="hideAboutPics">Hide Pictures</span>
+                            </button>
+                        </div>
                     </div>
-                </li>
-            </ul>
+
+                </div>
+
+            </accordion-group>
             
-            <!--BUTTONS-->
-            <div class="row">
-                <div class="col-sm-3">
-                    <button class="btn btn-default" ng-click="toggleShowAboutDetails()">
-                        <span ng-show="hideAboutDetails">Show Details</span>
-                        <span ng-hide="hideAboutDetails">Hide Details</span>
-                    </button>
-                </div>
-                
-                <div class="col-sm-6"></div>
-
-                <div class="col-sm-3 text-right">
-                    <button class="btn btn-default" ng-click="toggleShowAboutPictures()">
-                        <span ng-show="hideAboutPics">Show Pictures</span>
-                        <span ng-hide="hideAboutPics">Hide Pictures</span>
-                    </button>
-                </div>
-            </div>
-
-        </div>
-        
-        <!--WORK HISTORY SECTION-->
-        <h3>Work History</h3>
-        
-        <div class="list-group-item-rounded">
-
-            <cjgaccordian sites="Worksites">
-            </cjgaccordian>
+            <accordion-group class="mainPanel" heading="Work History" isOpen="\'true\'">
             
-            <!--BUTTONS--
-            <div class="row">
-                <div class="col-sm-3">
-                    <button class="btn btn-default" ng-click="toggleShowAllWorkDetails()">
-                        <span ng-show="hideWorkAll">Show Details</span>
-                        <span ng-hide="hideWorkAll">Hide Details</span>
-                    </button>
+                <div class="list-group-item-rounded">
+
+                <cjgaccordian sites="worksites"></cjgaccordian>
+
+                    <!--BUTTONS--
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <button class="btn btn-default" ng-click="toggleShowAllWorkDetails()">
+                                <span ng-show="hideWorkAll">Show Details</span>
+                                <span ng-hide="hideWorkAll">Hide Details</span>
+                            </button>
+                        </div>
+                    </div>-->
+
                 </div>
-            </div>-->
 
-        </div>
+            </accordion-group>                
 
+        </accordian>
+
+    <!--End Main Container Div-->
     </div>
 
 
