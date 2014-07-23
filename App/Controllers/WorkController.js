@@ -1,6 +1,6 @@
 ﻿infoApp.controller("infoController",
     function ($scope, $window) {
-        
+
         $scope.sortWorkOrder = "-eYear";
 
         $scope.hideAboutDetails = true;
@@ -18,7 +18,7 @@
         $scope.toggleShowWorkDetails = function (work) {
             work.showDetails = !work.showDetails;
         };
-            
+
         $scope.toggleShowAllWorkDetails = function () {
             $scope.hideWorkAll = !$scope.hideWorkAll;
         };
@@ -34,5 +34,6 @@
         };
 
         $scope.worksites = Worksites;
+        $scope.badgelist = Badgelist;
     }
 );

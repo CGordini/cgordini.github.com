@@ -15,7 +15,7 @@ angular.module('infoApp').directive('cjgcarousel', function(){
               $scope.slides = [];
 
               for (var i = 0; i < 10; i++){
-                $scope.slides.push({image: "App/Images/img" + i + ".jpg"});
+                $scope.slides.push({image: "App/Images/CarouselImages/img" + i + ".jpg"});
               }
             }
         }
