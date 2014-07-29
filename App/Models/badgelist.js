@@ -13,14 +13,18 @@ var Badgelist = new Array(4);
                              "http://cgordini.blogspot.com/",
                              "fa-google");
 
-    Badgelist[3] = new Badge("My Resume",
+    Badgelist[3] = new Badge("My LinkedIn",
+                             "https://www.linkedin.com/pub/cory-gordinier/4b/288/b07",
+                             "fa-linkedin");
+
+    Badgelist[4] = new Badge("My Resume",
                              "App/Docs/Resume.pdf",
                              "fa-file-text");
 
-    Badgelist[4] = new Badge("My References",
+    Badgelist[5] = new Badge("My References",
                              "App/Docs/References.pdf",
                              "fa-file-pdf-o");
 
-    Badgelist[5] = new Badge("Email Me",
+    Badgelist[6] = new Badge("Email Me",
                              "mailto:cory.gordinier@gmail.com",
                              "fa-envelope-o");
