@@ -3,8 +3,8 @@
 
         $scope.sortWorkOrder = "-eYear";
 
-        $scope.hideAboutDetails = true;
-        $scope.hideAboutPics = false;
+        $scope.hideAboutDetails = false;
+        $scope.hideAboutPics = true;
         $scope.hideAboutAll = false;
 
         $scope.hideWorkAll = true;
