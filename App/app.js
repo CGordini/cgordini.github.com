@@ -1,6 +1,6 @@
 ﻿var infoApp = new angular.module("infoApp", ["ngAnimate", "ui.bootstrap"]);
 
-WL.init({ client_id: '000000004812EB53', redirect_uri: 'http://cgordini.github.com/index.html' });
+WL.init({ client_id: '000000004812EB53', redirect_uri: 'https://cgordini.github.io' });
 
 $(document).ready(function() {
     WL.ui({
