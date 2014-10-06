@@ -13,46 +13,6 @@ $(document).ready(function() {
     });
 });
 
-
-
-// WL.login({ "scope": "wl.skydrive wl.signin" }).then(
-//     function(response) {
-//         openFromSkyDrive();
-//     },
-//     function(response) {
-//         log("Failed to authenticate.");
-//     }
-// );
-
-// function openFromSkyDrive() {
-//     WL.fileDialog({
-//         mode: 'open',
-//         select: 'single'
-//     }).then(
-//         function(response) {
-//             log("The following file is being downloaded:");
-//             log("");
-
-//             var files = response.data.files;
-//             for (var i = 0; i < files.length; i++) {
-//                 var file = files[i];
-//                 log(file.name);
-//                 WL.download({ "path": file.id + "/content" });
-//             }
-//         },
-//         function(errorResponse) {
-//             log("WL.fileDialog errorResponse = " + JSON.stringify(errorResponse));
-//         }
-//     );
-// }
-                    
-// function log(message) {
-//     var child = document.createTextNode(message);
-//     var parent = document.getElementById('JsOutputDiv') || document.body;
-//     parent.appendChild(child);
-//     parent.appendChild(document.createElement("br"));
-// }
-
 // WL.ui calls this once the user has successfully
 // selected file(s) on SkyDrive
 function handleDownload(response) {
@@ -73,6 +33,6 @@ function handleError(failureResponse) {
 // Don't edit this!
 function showResult(response) {
     $('#result').html("<h3>Woot! You should see your files downloading.</h3>");
-    answer = response;
+    console.log(response);
     $('#result').trigger('c');
 }
