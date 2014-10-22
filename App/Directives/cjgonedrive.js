@@ -6,9 +6,6 @@
 
     var dmsOneDrive = function(){
 
-        // this.clientId = '000000004C127600';
-        // this.redirectUri = 'localhost';//$location.path();
-
         this.isAvailable = false;
         var authToken;
 
@@ -26,14 +23,6 @@
                 return;
             }
 
-            // WL.Event.subscribe('auth.login', onLogin);
-
-            //Init our OneDrive object
-            // WL.init({
-            //     client_id: this.clientId,
-            //     redirect_uri: this.redirectUri,
-            //     scope: 'wl.signin',
-            // });
             WL.init({ client_id: '000000004812EB53', redirect_uri: 'https://cgordini.github.io', scope: 'wl.signin' });
 
             var callbackFn = callback;
@@ -65,29 +54,19 @@
                     if (response.data.files && response.data.files.length > 0) {
                         for (var file = 0; file < response.data.files.length; file++) {
                             // Use file IDs to iterate through files as needed.
-                            msg += '\n' + response.data.files[file];
+                            msg += '\n\n' + response.data.files[file].name;
+                            msg += '\n' + response.data.files[file].link;
                         }
                     }
                     //Log the message
                     console.log(msg);
+                    //If using the callback function, do so here.
+                    //callbackFn(response.data);
                 },
                 function (responseFailed) {
                     console.log('Folder info error.');
                 }
             );
-        };
-
-        var onLogin = function(session){
-            console.log('Session:');
-            console.log(session);
-            var ses = WL.getSession();
-            console.log('Ses:');
-            console.log(ses);
-            if (ses.error){
-                console.log('Error getting session');
-            } else {
-                console.log('Success getting session!');
-            }
         };
 
         this.checkAvailability();

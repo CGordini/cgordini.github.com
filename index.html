@@ -18,6 +18,9 @@
             </div>
             <div class="col-sm-4" id="socialdiv">
                 <ul id="social_side_links">
+                    <li cjgdraggable>
+                        <a href="" ng-href="" ng-click="doOneDriveThings()" tooltip='OneDrive' tooltip-placement="bottom"><i class="fa fa-2x fa-windows"></i></a>
+                    </li>
                     <li cjgdraggable ng-repeat="badge in badgelist">
                         <a href={{badge.link}} tooltip={{badge.title}} tooltip-placement="bottom"><i class="fa fa-2x {{badge.image}}"></i></a>
                     </li>
@@ -116,13 +119,6 @@
         </accordian>
 
         <!--End Main Container Div-->
-
-        <div id="skydrive-download">
-            <button class="btn btn-default" ng-click="doOneDriveThings()">
-                OneDrive
-            </button>
-        </div>
-
     </div>
 
     <script src="https://js.live.net/v5.0/wl.js"></script>
