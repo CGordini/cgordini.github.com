@@ -1,5 +1,5 @@
 ﻿var infoApp = new angular.module("infoApp", ["ngAnimate", "ui.bootstrap"]);
-
+/*
 WL.init({ client_id: '000000004812EB53', redirect_uri: 'https://cgordini.github.io' });
 
 $(document).ready(function() {
@@ -18,8 +18,8 @@ $(document).ready(function() {
 function handleDownload(response) {
     showResult(response);
 
-	WL.download({ 
-	    path: response.data.files[0].id + "/content" 
+	WL.download({
+	    path: response.data.files[0].id + "/content"
 	});
 }
 
@@ -35,4 +35,4 @@ function showResult(response) {
     $('#result').html("<h3>Woot! You should see your files downloading.</h3>");
     console.log(response);
     $('#result').trigger('c');
-}
+}*/

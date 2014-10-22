@@ -1,5 +1,5 @@
 ﻿infoApp.controller("infoController",
-    function ($scope, $window) {
+    function ($scope, $window, dmsOneDrive) {
 
         $scope.sortWorkOrder = "-eYear";
 
@@ -31,6 +31,11 @@
         $scope.toggleShowAboutPictures = function () {
             $scope.hideAboutPics = !$scope.hideAboutPics;
             $scope.hideAboutAll = $scope.hideAboutPics && $scope.hideAboutDetails;
+        };
+
+        $scope.doOneDriveThings = function(){
+            console.log('herro');
+            dmsOneDrive.create();
         };
 
         $scope.worksites = Worksites;
