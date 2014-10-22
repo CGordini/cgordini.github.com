@@ -62,12 +62,13 @@
                         }
                     }
                     // For each file selected...
-                    if (response.data.files && response.data.folders.length > 0) {
+                    if (response.data.files && response.data.files.length > 0) {
                         for (var file = 0; file < response.data.files.length; file++) {
                             // Use file IDs to iterate through files as needed.
-                            msg += '\n' + response.data.files[file].id;
+                            msg += '\n' + response.data.files[file];
                         }
                     }
+                    //Log the message
                     console.log(msg);
                 },
                 function (responseFailed) {
