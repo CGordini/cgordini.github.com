@@ -1,0 +1,30 @@
+body {
+  background-color: #eee;
+}
+
+.rounded {
+    border:1px solid #;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.centered {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.text-center {
+    font-size: x-small;
+    text-align: center;
+}
+
+.bolded {
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: WeblySleekUi;
+    src: url('files/fonts/weblysleekuisl.ttf');
+}

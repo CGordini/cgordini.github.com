@@ -1,4 +1,4 @@
-angular.module('infoApp').directive('cjgcarousel', function(){
+angular.module('app').directive('cjgcarousel', function(){
         return {
             restrict: 'A',
             scope: {},

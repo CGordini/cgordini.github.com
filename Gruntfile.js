@@ -1,119 +1,181 @@
-/*global module:false*/
 module.exports = function(grunt) {
 
-  // These plugins provide necessary tasks.
-  grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-contrib-watch');
   require('load-grunt-tasks')(grunt);
 
-  // Project configuration.
   grunt.initConfig({
+    bowerCfg: grunt.file.readJSON('bower.json'),
+    pkg: grunt.file.readJSON('package.json'),
 
     // Project settings
     appCfg: {
         // configurable paths
         webroot: 'app',
         src: 'app/!(bower_components)',
-
+        dist: 'dist',
+        analysis: 'analysis',
+        coverage: 'coverage',
+        banner: '/*! <%= bowerCfg.name %> - v<%= bowerCfg.version %> - ' +
+                '<%= grunt.template.today("yyyy-mm-dd") %> - ' +
+                '<%= bowerCfg.authors %> */'
     },
 
-    // Task configuration.
-    jshint: {
-          options: {
-            curly: true,
-            eqeqeq: true,
-            immed: true,
-            latedef: true,
-            newcap: true,
-            noarg: true,
-            sub: true,
-            undef: true,
-            unused: true,
-            boss: true,
-            eqnull: true,
-            globals: {
-              jQuery: true
-            }
-          },
-          gruntfile: {
-            src: 'Gruntfile.js'
-          },
-          lib_test: {
-            src: ['lib/**/*.js', 'test/**/*.js']
-          }
+    clean: {
+        dist: {
+            files: [{
+                dot: true,
+                src: [
+                    '.tmp',
+                    '<%= appCfg.dist %>'
+                ]
+            }]
+        },
+        bower: '<%= appCfg.webroot %>/bower_components',
+        up: {
+            files: [{
+                dot: true,
+                src: [
+                    '.tmp',
+                ]
+            }]
+        },
     },
-    watch: {
-        js: {
-            files: [
-                '<%= appCfg.webroot %>/*.js',
-                '<%= appCfg.src %>/**/*.js',
-            ],
-            tasks: ['newer:jshint:all', 'newer:jscs', 'karma:unit:run'],
-            options: {
-                livereload: true
-            }
+    concurrent: {
+        options: {
+            logConcurrentOutput: true
         },
-        css: {
-            files: [
-                '<%= appCfg.webroot %>/*.css',
-                '<%= appCfg.src %>/**/*.css'
-            ],
-            tasks: ['copy:css']
+        dist: [
+            // 'imagemin',
+            'copy:fonts',
+            'copy:images',
+            'copy:dist'
+        ]
+    },
+    copy: {
+        images: {
+            files: [{
+                expand: true,
+                dot: true,
+                cwd: '<%= appCfg.webroot %>',
+                dest: '<%= appCfg.dist %>',
+                src: [
+                    'images/Staff/*'
+                ]
+            }]
         },
-        gruntfile: {
-            files: '<%= jshint.gruntfile.src %>',
-            tasks: ['jshint:gruntfile']
+        fonts: {
+            files: [{
+                expand: true,
+                flatten: true,
+                dot: true,
+                cwd: '<%= appCfg.webroot %>',
+                dest: '<%= appCfg.dist %>/fonts',
+                src: ['bower_components/font-awesome/fonts/*.{eot,ttf,woff}',
+                      'bower_components/bootstrap/fonts/*.{eot,ttf,woff}'],
+            }]
         },
-        lib_test: {
-            files: '<%= jshint.lib_test.src %>',
-            tasks: ['jshint:lib_test']
+        dist: {
+            files: [{
+                expand: true,
+                dot: true,
+                cwd: '<%= appCfg.webroot %>',
+                dest: '<%= appCfg.dist %>',
+                src: [
+                    '.htaccess',
+                    '*.html',
+                    '!bower_components/**'],
+            }]
         },
-        livereload: {
-            options: {
-                livereload: '<%= connect.options.livereload %>'
-            },
-            files: [
-                '<%= appCfg.webroot %>/*.html',
-                '<%= appCfg.src %>/**/*.html',
-                '.tmp/css/{,*/}*.css',
-                '<%= appCfg.src %>/**/*.{png,jpg,jpeg,gif,webp,svg}'
+    },
+    // The following *-min tasks produce minified files in the dist folder
+    imagemin: {
+        dist: {
+            files: [{
+                expand: true,
+                cwd: '<%= appCfg.src %>',
+                src: [
+                    // imagemin gifsicle is failing for glibc < 2.14
+                    '**/*.{png,jpg,jpeg}'
+                ],
+                dest: '<%= appCfg.dist %>/css'
+            }]
+        }
+    },
+    rev: {
+        files: {
+            src: [
+                '<%= appCfg.dist %>/*.js',
+                '<%= appCfg.dist %>/css/*.css',
+                '<%= appCfg.dist %>/**/*.{png,jpg,jpeg,gif,webp,eot,ttf,svg,woff}'
             ]
         }
     },
-    connect: {
+    jshint: {
+      files: ['Gruntfile.js', 'src/**/*.js', 'test/**/*.js'],
+      options: {
+        // options here to override JSHint defaults
+        globals: {
+          jQuery: true,
+          console: true,
+          module: true,
+          document: true
+        }
+      }
+    },
+    useminPrepare: {
+        html: [
+            '<%= appCfg.webroot %>/index.html',
+            '<%= appCfg.webroot %>/appearance-preview.html'
+        ],
         options: {
-            port: 9000,
-            // Change this to '0.0.0.0' to access the server from outside.
-            hostname: 'localhost',
-            open: 'http://localhost:9000',
-            base: [
-                '.tmp',
-                '<%= appCfg.webroot %>'
-            ],
-            livereload: 35729
-        },
-        // livereload: {
-        //     options: {
-        //         open: 'http://localhost:9000',
-        //         base: [
-        //             '.tmp',
-        //             '<%= appCfg.webroot %>'
-        //         ],
-        //     }
-        // }
+            dest: '<%= appCfg.dist %>',
+            flow: {
+                html: {
+                    steps: {
+                        js: ['concat', 'uglifyjs'],
+                        css: ['cssmin']
+                    },
+                    post: {}
+                }
+            }
+        }
+    },
+    usemin: {
+        html: [
+            '<%= appCfg.dist %>/**/*.html'
+        ],
+        css: ['<%= appCfg.dist %>/css/*.css'],
+        options: {
+            assetsDirs: ['<%= appCfg.dist %>', '<%= appCfg.dist %>/**/*']
+        }
+    },
+    cssmin: {
+        options: {
+            banner: '<%= appCfg.banner %>'
+        }
+    },
+    uglify: {
+        options: {
+            banner: '<%= appCfg.banner %>'
+        }
+    },
+    watch: {
+        files: ['<%= jshint.files %>'],
+        tasks: ['jshint']
     }
-
-
   });
 
-    grunt.registerTask('serve', function() {
-        grunt.task.run([
-            //'clean:server',
-            //'concurrent:server',
-            //'configureProxies:server',
-            'connect',
-            'watch'
-      ]);
-    });
+  grunt.registerTask('test',    ['jshint']);
 
+  // simple build task
+  grunt.registerTask('build', [
+      'clean:dist',
+      'useminPrepare',
+      'concurrent:dist',
+      'concat',
+      'cssmin',
+      'uglify',
+      'rev',
+      'usemin',
+      'clean:up'
+  ]);
 };

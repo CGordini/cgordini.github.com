@@ -1,12 +1,8 @@
-// This makes any element draggable
-// Usage: <div draggable>Foobar</div>
-angular.module('infoApp').directive('cjgdraggable', function() {
-  return {
-    // A = attribute, E = Element, C = Class and M = HTML Comment
-    restrict:'A',
-    //The link function is responsible for registering DOM listeners as well as updating the DOM.
-    link: function(scope, element, attrs) {
-      element.draggable();
-    }
-  };
+angular.module('app').directive('cjgdraggable', function() {
+    return {
+        restrict:'A',
+        link: function(scope, element, attrs) {
+            element.draggable();
+        }
+    };
 });

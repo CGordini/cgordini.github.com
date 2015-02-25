@@ -1,4 +1,4 @@
-angular.module('infoApp').directive('cjgaccordian', function(){
+angular.module('app').directive('cjgaccordian', function(){
         return {
             restrict: 'E',
             scope: { worksites: '=sites'},

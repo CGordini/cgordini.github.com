@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="app">
+<head>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bower_components/angular/angular-csp.css" />
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="directives/main-info/main-info.css" />
+
+    <title>About Cory</title>
+</head>
+<body>
+    <div class="container" id="main" ng-controller="mainController">
+
+        <main-info model="mainInfoModel"></main-info>
+
+
+        <footer class="text-center">
+            <p>Created using Angular and Bootstrap</p>
+        </footer>
+
+    </div>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/jquery-ui/ui/core.js"></script>
+    <script src="bower_components/jquery-ui/ui/widget.js"></script>
+    <script src="bower_components/jquery-ui/ui/mouse.js"></script>
+    <script src="bower_components/jquery-ui/ui/draggable.js"></script>
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+
+    <script src="app.js"></script>
+    <script src="models/work.js"></script>
+    <script src="models/worksites.js"></script>
+    <script src="models/badge.js"></script>
+    <script src="models/badgelist.js"></script>
+    <script src="controllers/MainController.js"></script>
+    <script src="directives/main-info/main-info.js"></script>
+
+    <script src="directives/cjgcarousel.js"></script>
+    <script src="directives/cjgaccordian.js"></script>
+    <script src="directives/cjgdraggable.js"></script>
+
+
+</body>
+</html>
