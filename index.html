@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="app">
+<head>
+    <link rel="stylesheet" href="css/59e89a71.dist.css">
+
+    <title>About Cory</title>
+</head>
+<body>
+    <div class="container" id="main" ng-controller="mainController">
+
+        <button type="button" id="smallSocialButton" class="btn slidebutton"
+                ng-click="slidebtnClick()" ng-show="animateCount % 2 === 0">
+            <span class="fa fa-bars"/>
+        </button>
+
+        <div id="fullSocialButton" class="animated" ng-show="animateCount % 2 !== 0">
+            <div class="endbtn" ng-click="slidebtnClick()"><span class="fa fa-bars"/></div>
+            <!--Code for social badges goes here-->
+            <ul class="social-side-links">
+                <li cjgdraggable class="cjg-badge" ng-repeat="badge in badgelist">
+                    <a href={{badge.link}} tooltip={{badge.title}} tooltip-placement="bottom">
+                        <i class="fa fa-2x {{badge.image}}"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!--MAIN block o' page-->
+        <main-info model="mainInfoModel"></main-info>
+
+        <footer class="text-center">
+            <p>Created using Angular and Bootstrap.</p>
+            <p>Want the code? <a href="mailto:cory.gordinier+coderequest@gmail.com">Just ask!</a></p>
+        </footer>
+
+    </div>
+
+    <script src="16eb1a44.dist.js"></script>
+
+</body>
+</html>
