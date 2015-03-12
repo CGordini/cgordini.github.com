@@ -3,8 +3,8 @@
 <head>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="bower_components/angular/angular-csp.css" />
+    <link rel="stylesheet" href="bower_components/animate.css/animate.css" />
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
-
     <link rel="stylesheet" href="app.css" />
     <link rel="stylesheet" href="directives/main-info/main-info.css" />
 
@@ -13,11 +13,29 @@
 <body>
     <div class="container" id="main" ng-controller="mainController">
 
+        <button type="button" id="smallSocialButton" class="btn slidebutton"
+                ng-click="slidebtnClick()" ng-show="animateCount % 2 === 0">
+            <span class="fa fa-bars"/>
+        </button>
+
+        <div id="fullSocialButton" class="animated" ng-show="animateCount % 2 !== 0">
+            <div class="endbtn" ng-click="slidebtnClick()"><span class="fa fa-bars"/></div>
+            <!--Code for social badges goes here-->
+            <ul class="social-side-links">
+                <li cjgdraggable class="cjg-badge" ng-repeat="badge in badgelist">
+                    <a href={{badge.link}} tooltip={{badge.title}} tooltip-placement="bottom">
+                        <i class="fa fa-2x {{badge.image}}"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!--MAIN block o' page-->
         <main-info model="mainInfoModel"></main-info>
 
-
         <footer class="text-center">
-            <p>Created using Angular and Bootstrap</p>
+            <p>Created using Angular and Bootstrap.</p>
+            <p>Want the code? <a href="mailto:cory.gordinier+coderequest@gmail.com">Just ask!</a></p>
         </footer>
 
     </div>
@@ -43,7 +61,6 @@
     <script src="directives/cjgcarousel.js"></script>
     <script src="directives/cjgaccordian.js"></script>
     <script src="directives/cjgdraggable.js"></script>
-
 
 </body>
 </html>

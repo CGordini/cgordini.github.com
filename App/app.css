@@ -24,6 +24,91 @@ body {
     font-weight: bold;
 }
 
+.slidebutton{
+    background-color: orange;
+    border: orange;
+    color: white;
+    margin-right:0%;
+    position: absolute;
+    top: 8px;
+    right: 0%;
+}
+
+.slidebutton:hover{
+    background-color: orangered;
+    border: orangered;
+    color: white;
+}
+
+.slidebutton:focus{
+    color: white;
+    /*TODO border*/
+}
+
+#fullSocialButton {
+    display: inline-block;
+    background-color: orange;
+    border: orange;
+    color: white;
+    margin-right:0%;
+    position: absolute;
+    top: 8px;
+    width: 33%;
+    height: 32px;
+    right: 0%;
+
+    border:1px solid #;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.endbtn {
+    position: absolute;
+    display: inline-block;
+    padding-left: 12px;
+    padding-top: 6px;
+    width: 36px;
+    height: 32px;
+    border:1px solid #;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.endbtn:hover{
+    background-color: orangered;
+    border: orangered;
+    color: white;
+}
+
+/*@media (max-width: 978px) {
+    .slidebutton {
+        left: 91.5%;
+    }
+}*/
+
+.social-side-links {
+    display: inline-block;
+    margin: 0px;
+    position: absolute;
+    width: 100%;
+    left: 36px;
+    padding-left: 0px;
+}
+
+.cjg-badge {
+  display: inline-block;
+  position: relative;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 3px;
+}
+
 @font-face {
     font-family: WeblySleekUi;
     src: url('files/fonts/weblysleekuisl.ttf');

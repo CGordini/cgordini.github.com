@@ -1,6 +1,13 @@
 .main-info.about-me {
     margin-top: 60px;
-    background-color: #fff;
+    background-color:rgba(255, 255, 255, 0.80);
+}
+
+.main-info.description{
+    margin-top: -2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color:rgba(255, 255, 255, 0.85);
 }
 
 .main-info .image-square {
@@ -34,4 +41,27 @@
 
 .main-info .info-text{
     font-size: 1.0vw;
+    opacity: 0.95;
+}
+
+.main-info-background {
+    display: inline-block;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100%;
+    margin-left: -70px;
+    margin-right: -70px;
+    padding-left: 118px;
+    padding-right: 118px;
+}
+
+@media (max-width: 978px) {
+    .main-info-background {
+        margin-left: -124px;
+        margin-right: -124px;
+        padding-left: 124px;
+        padding-right: 124px;
+        background-size: 100%;
+    }
 }
