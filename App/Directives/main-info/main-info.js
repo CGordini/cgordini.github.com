@@ -47,7 +47,7 @@ angular.module('app').directive('mainInfo', function(){
 
                         'As a little about myself: I consider myself a fan of fashion and cars (own a 2007 Ford Mustang),<br/>' +
                         'a beer snob (my favorite is Bell\'s Brewing from Kalamazoo, Michigan), a guitarist,<br/>' +
-                        'and an electronics hobbiest (with an interest in Arduino and Raspberry Pi microcontrollers).' +
+                        'and an electronics hobbyist (with an interest in Arduino and Raspberry Pi microcontrollers).' +
                     '</div>' +
                 '</div>' +
 
