@@ -1,0 +1,24 @@
+<div class="cjg-modal">
+    <button type="button" class="close" ng-click="cancelSelection()">
+      &times;
+    </button>
+    <div class="modal-header">
+        Gallery
+    </div>
+    <div class="modal-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb" ng-repeat="item in images">
+                    <a class="thumbnail" href="#">
+                        <img class="img-responsive" src="{{item.pic}}" title="{{item.title}}"
+                         ng-click="setSelection(item)">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" ng-click="selectRequest()">Select</button>
+        <button class="btn btn-default" ng-click="cancelSelection()">Cancel</button>
+    </div>
+</div>
