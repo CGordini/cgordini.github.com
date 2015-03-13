@@ -19,6 +19,28 @@
 .main-info .image-square img {
     max-height: 100%;
     max-width: 100%;
+    display: inline-block;
+}
+
+.image-background{
+    padding: 4px;
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    border-color: transparent;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.image-background:hover {
+    padding: 3px;
+    cursor: pointer;
+    border: 1px solid;
+    border-color: blue;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
 }
 
 .main-info .padded-left {
@@ -42,6 +64,17 @@
 .main-info .info-text{
     font-size: 1.0vw;
     opacity: 0.95;
+}
+
+.main-info .cjg-btn{
+    background-color: orange;
+    border-color: orange;
+    width: 100%;
+}
+
+.main-info .cjg-btn:hover{
+    background-color: orangered;
+    border-color: orangered;
 }
 
 .main-info-background {

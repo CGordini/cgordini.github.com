@@ -1,5 +1,5 @@
 {
-  "name": "eating",
+  "name": "CGordini",
   "version": "1.0.0",
   "private": true,
   "devDependencies": {
@@ -16,6 +16,7 @@
     "grunt-contrib-uglify": "^0.5.1",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-file-blocks": "0.3.0",
+    "grunt-html2js": "^0.2.8",
     "grunt-rev": "^0.1.0",
     "grunt-usemin": "^2.3.0",
     "load-grunt-tasks": "~0.4.0"
