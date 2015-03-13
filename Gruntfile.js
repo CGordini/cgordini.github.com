@@ -112,8 +112,10 @@ module.exports = function(grunt) {
                 src: [
                     '.htaccess',
                     '*.html',
+                    '**/*.html',
                     '!bower_components/**',
-                    '!**/*.2js.html'],
+                    //'!**/*.2js.html'
+                ],
             }]
         },
     },
@@ -158,7 +160,6 @@ module.exports = function(grunt) {
                 '<%= appCfg.dist %>/css/*.css',
                 '!<%= appCfg.dist %>/**/*.{png,jpg,jpeg,gif}',
                 '<%= appCfg.dist %>/**/*.{webp,eot,ttf,svg,woff}',
-                //'!<%= appCfg.dist %>/css/**/*.{webp,eot,ttf,svg,woff}',
             ]
         }
     },
