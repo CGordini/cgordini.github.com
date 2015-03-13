@@ -1,7 +1,7 @@
 (function(angular){
     'use strict';
 
-    angular.module('eatingApp')
+    angular.module('app')
 
     .factory('DateHelper',
         function(){
