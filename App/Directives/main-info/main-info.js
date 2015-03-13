@@ -77,7 +77,7 @@
                 scope.openModal = function () {
 
                     var modalInstance = $modal.open({
-                        templateUrl: 'directives/picture-modal/picture-modal.2js.html',
+                        templateUrl: 'directives/picture-modal/picture-modal.html',
                         // backdrop: 'static',
                         // size: configOptions.size,
                         controller: 'pictureModalController',

@@ -148,15 +148,6 @@ module.exports = function(grunt) {
             assetsDirs: ['<%= appCfg.dist %>', '<%= appCfg.dist %>/**/*']
         }
     },
-    html2js: {
-        options: {
-            base: '<%= appCfg.webroot %>'
-        },
-        main: {
-            src: ['<%= appCfg.src %>/**/*.html'],
-            dest: '<%= appCfg.webroot %>/generated/templates.js'
-        }
-    },
     cssmin: {
         options: {
             banner: '<%= appCfg.banner %>'
@@ -178,7 +169,6 @@ module.exports = function(grunt) {
   // simple build task
   grunt.registerTask('build', [
       'clean:dist',
-      'html2js',
       'useminPrepare',
       'concurrent:dist',
       'concat',
