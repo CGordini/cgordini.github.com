@@ -15,7 +15,11 @@ module.exports = function(grunt) {
         'bower_components/angular-bootstrap/ui-bootstrap-tpls.js',
         // module config
         'app.js',
-        '**/*.js',
+        'App/Controllers/**.js',
+        'App/Directives/**/*.js',
+        'App/generated/**/*.js',
+        'App/Models/**/*.js',
+
     ];
 
 
@@ -63,20 +67,19 @@ module.exports = function(grunt) {
         dist: [
             // 'imagemin',
             'copy:fonts',
-            'copy:images',
+            'copy:cssFonts',
+            'copy:files',
             'copy:dist'
         ]
     },
     copy: {
-        images: {
+        files: {
             files: [{
                 expand: true,
                 dot: true,
                 cwd: '<%= appCfg.webroot %>',
                 dest: '<%= appCfg.dist %>',
-                src: [
-                    'images/Staff/*'
-                ]
+                src: ['files/**/*']
             }]
         },
         fonts: {
@@ -90,6 +93,16 @@ module.exports = function(grunt) {
                       'bower_components/bootstrap/fonts/*.{eot,ttf,woff}'],
             }]
         },
+        cssFonts: {
+            files: [{
+                expand: true,
+                flatten: true,
+                dot: true,
+                cwd: '<%= appCfg.webroot %>',
+                dest: '<%= appCfg.dist %>/css/files/fonts/',
+                src: ['files/fonts/*.{eot,ttf,woff}'],
+            }]
+        },
         dist: {
             files: [{
                 expand: true,
@@ -99,7 +112,8 @@ module.exports = function(grunt) {
                 src: [
                     '.htaccess',
                     '*.html',
-                    '!bower_components/**'],
+                    '!bower_components/**',
+                    '!**/*.2js.html'],
             }]
         },
     },
@@ -117,12 +131,34 @@ module.exports = function(grunt) {
             }]
         }
     },
+    htmlmin: {
+        dist: {
+            options: {
+                collapseWhitespace: true,
+                conservativeCollapse: true,
+                collapseBooleanAttributes: true,
+                removeCommentsFromCDATA: true,
+                removeOptionalTags: true
+            },
+            files: [{
+                expand: true,
+                cwd: '<%= appCfg.dist %>',
+                src: [
+                    '*.html',
+                    '**/*.html',
+                ],
+                dest: '<%= appCfg.dist %>'
+            }]
+        }
+    },
     rev: {
         files: {
             src: [
                 '<%= appCfg.dist %>/*.js',
                 '<%= appCfg.dist %>/css/*.css',
-                '<%= appCfg.dist %>/**/*.{png,jpg,jpeg,gif,webp,eot,ttf,svg,woff}'
+                '!<%= appCfg.dist %>/**/*.{png,jpg,jpeg,gif}',
+                '<%= appCfg.dist %>/**/*.{webp,eot,ttf,svg,woff}',
+                //'!<%= appCfg.dist %>/css/**/*.{webp,eot,ttf,svg,woff}',
             ]
         }
     },
@@ -210,7 +246,7 @@ module.exports = function(grunt) {
   grunt.registerTask('build', [
       'clean:dist',
       'html2js',
-      'fileblocks',
+      //'fileblocks',
       'useminPrepare',
       'concurrent:dist',
       'concat',
@@ -220,4 +256,9 @@ module.exports = function(grunt) {
       'usemin',
       'clean:up'
   ]);
+
+
+  // simple build task
+  grunt.registerTask('nuke', ['clean:dist']);
+
 };
