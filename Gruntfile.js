@@ -2,6 +2,23 @@ module.exports = function(grunt) {
 
   require('load-grunt-tasks')(grunt);
 
+   var appSrc = [
+        //bower things
+        'bower_components/jquery/dist/jquery.min.js',
+        'bower_components/jquery-ui/ui/core.js',
+        'bower_components/jquery-ui/ui/widget.js',
+        'bower_components/jquery-ui/ui/mouse.js',
+        'bower_components/jquery-ui/ui/draggable.js',
+
+        'bower_components/angular/angular.js',
+        'bower_components/angular-animate/angular-animate.js',
+        'bower_components/angular-bootstrap/ui-bootstrap-tpls.js',
+        // module config
+        'app.js',
+        '**/*.js',
+    ];
+
+
   grunt.initConfig({
     bowerCfg: grunt.file.readJSON('bower.json'),
     pkg: grunt.file.readJSON('package.json'),
@@ -148,6 +165,20 @@ module.exports = function(grunt) {
             assetsDirs: ['<%= appCfg.dist %>', '<%= appCfg.dist %>/**/*']
         }
     },
+    fileblocks: {
+        options: {
+            rebuild: true
+        },
+        dist: {
+            src: '<%= appCfg.webroot %>/index.html',
+            blocks: {
+                app: {
+                    cwd: '<%= appCfg.webroot %>',
+                    src: appSrc
+                }
+            }
+        }
+    },
     html2js: {
         options: {
             base: '<%= appCfg.webroot %>'
@@ -179,6 +210,7 @@ module.exports = function(grunt) {
   grunt.registerTask('build', [
       'clean:dist',
       'html2js',
+      'fileblocks',
       'useminPrepare',
       'concurrent:dist',
       'concat',
