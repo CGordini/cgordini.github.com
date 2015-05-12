@@ -124,15 +124,6 @@ module.exports = function(grunt) {
             }]
         }
     },
-    html2js: {
-        options: {
-            base: '<%= appCfg.webroot %>'
-        },
-        main: {
-            src: ['<%= appCfg.src %>/**/*.html'],
-            dest: '<%= appCfg.webroot %>/generated/templates.js'
-        }
-    },
     htmlmin: {
         dist: {
             options: {
