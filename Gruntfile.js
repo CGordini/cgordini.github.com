@@ -2,27 +2,6 @@ module.exports = function(grunt) {
 
   require('load-grunt-tasks')(grunt);
 
-   var appSrc = [
-        //bower things
-        'bower_components/jquery/dist/jquery.min.js',
-        'bower_components/jquery-ui/ui/core.js',
-        'bower_components/jquery-ui/ui/widget.js',
-        'bower_components/jquery-ui/ui/mouse.js',
-        'bower_components/jquery-ui/ui/draggable.js',
-
-        'bower_components/angular/angular.js',
-        'bower_components/angular-animate/angular-animate.js',
-        'bower_components/angular-bootstrap/ui-bootstrap-tpls.js',
-        // module config
-        'app.js',
-        'App/Controllers/**.js',
-        'App/Directives/**/*.js',
-        'App/generated/**/*.js',
-        'App/Models/**/*.js',
-
-    ];
-
-
   grunt.initConfig({
     bowerCfg: grunt.file.readJSON('bower.json'),
     pkg: grunt.file.readJSON('package.json'),
@@ -114,10 +93,22 @@ module.exports = function(grunt) {
                     '*.html',
                     '**/*.html',
                     '!bower_components/**',
-                    //'!**/*.2js.html'
+                    '!**/*.2js.html'
                 ],
             }]
         },
+    },
+    jshint: {
+        files: ['Gruntfile.js', 'src/**/*.js', 'test/**/*.js'],
+            options: {
+            // options here to override JSHint defaults
+            globals: {
+                jQuery: true,
+                console: true,
+                module: true,
+                document: true
+            }
+        }
     },
     // The following *-min tasks produce minified files in the dist folder
     imagemin: {
@@ -131,6 +122,15 @@ module.exports = function(grunt) {
                 ],
                 dest: '<%= appCfg.dist %>/css'
             }]
+        }
+    },
+    html2js: {
+        options: {
+            base: '<%= appCfg.webroot %>'
+        },
+        main: {
+            src: ['<%= appCfg.src %>/**/*.html'],
+            dest: '<%= appCfg.webroot %>/generated/templates.js'
         }
     },
     htmlmin: {
@@ -153,6 +153,20 @@ module.exports = function(grunt) {
             }]
         }
     },
+    fileblocks: {
+        options: {
+            rebuild: true
+        },
+        dist: {
+            src: '<%= appCfg.webroot %>/index.html',
+            blocks: {
+                templates: {
+                    cwd: '<%= appCfg.webroot %>',
+                    src: 'generated/templates.js'
+                }
+            }
+        }
+    },
     rev: {
         files: {
             src: [
@@ -162,18 +176,6 @@ module.exports = function(grunt) {
                 '<%= appCfg.dist %>/**/*.{webp,eot,ttf,svg,woff}',
             ]
         }
-    },
-    jshint: {
-      files: ['Gruntfile.js', 'src/**/*.js', 'test/**/*.js'],
-      options: {
-        // options here to override JSHint defaults
-        globals: {
-          jQuery: true,
-          console: true,
-          module: true,
-          document: true
-        }
-      }
     },
     useminPrepare: {
         html: [
@@ -200,20 +202,6 @@ module.exports = function(grunt) {
         css: ['<%= appCfg.dist %>/css/*.css'],
         options: {
             assetsDirs: ['<%= appCfg.dist %>', '<%= appCfg.dist %>/**/*']
-        }
-    },
-    fileblocks: {
-        options: {
-            rebuild: true
-        },
-        dist: {
-            src: '<%= appCfg.webroot %>/index.html',
-            blocks: {
-                app: {
-                    cwd: '<%= appCfg.webroot %>',
-                    src: appSrc
-                }
-            }
         }
     },
     html2js: {
@@ -247,7 +235,7 @@ module.exports = function(grunt) {
   grunt.registerTask('build', [
       'clean:dist',
       'html2js',
-      //'fileblocks',
+      'fileblocks',
       'useminPrepare',
       'concurrent:dist',
       'concat',
