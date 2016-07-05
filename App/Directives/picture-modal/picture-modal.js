@@ -3,9 +3,9 @@
 
     angular.module('app').controller('pictureModalController', [
         '$scope',
-        '$modalInstance',
+        '$uibModalInstance',
         'Imagelist',
-        function($scope, $modalInstance, Imagelist){
+        function($scope, $uibModalInstance, Imagelist){
 
             // $scope.headerText = config.headerText;
             // $scope.nameText = config.nameText;
@@ -19,18 +19,18 @@
 
             $scope.setSelection = function(item){
                 selectedPicture = item;
-            }
+            };
 
             $scope.selectRequest = function() {
                 $scope.closeModalAction(selectedPicture);
             };
 
             $scope.closeModalAction = function(selection){
-                $modalInstance.close(selection);
+                $uibModalInstance.close(selection);
             };
 
             $scope.cancelSelection = function() {
-                $modalInstance.dismiss('cancelled');
+                $uibModalInstance.dismiss('cancelled');
             };
         }
     ]);

@@ -4,8 +4,8 @@
     var app = angular.module("app");
 
     app.directive("mainInfo",
-        ['$modal',
-        function($modal){
+        ['$uibModal',
+        function($uibModal){
         return {
             restrict: 'E',
             scope: {
@@ -81,7 +81,7 @@
                     };
 
 
-                    var modalInstance = $modal.open({
+                    var modalInstance = $uibModal.open({
                         templateUrl: _templatePath('picture-modal'),
                         // backdrop: 'static',
                         // size: configOptions.size,

@@ -28,6 +28,18 @@
                     ]
             };
 
+            $scope.hobbyInfoModel = {
+                groups: [
+                    {'title': 'Step 1', 'content': 'ArbitraryContent'},
+                    {'title': 'Step 2', 'content': 'ArbitraryContent'},
+                    {'title': 'Step 3', 'content': 'ArbitraryContent'},
+                    {'title': 'Step 4', 'content': 'ArbitraryContent'},
+                    {'title': 'Step 5', 'content': 'ArbitraryContent'},
+                    {'title': 'Step 6', 'content': 'ArbitraryContent'},
+                    {'title': 'Step 7', 'content': 'ArbitraryContent'},
+                ]
+            };
+
             $scope.toggleSlideButton = false;
 
             $scope.animateCount = 0;
