@@ -211,6 +211,8 @@ module.exports = function(grunt) {
     },
     uglify: {
         options: {
+            report: 'min',
+            mangle: false,
             banner: '<%= appCfg.banner %>'
         }
     },
