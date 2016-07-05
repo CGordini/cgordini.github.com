@@ -105,9 +105,9 @@
             disableMouse: true,
 
             //fixing bug in iScroll with links: https://github.com/cubiq/iscroll/issues/783
-            click: true 
+            click: true
         };
-        
+
         if(typeof IScroll !== 'undefined'){
             /*
             * Turns iScroll `mousewheel` option off dynamically
@@ -118,7 +118,7 @@
                 this.wrapper.addEventListener('mousewheel', this);
                 this.wrapper.addEventListener('DOMMouseScroll', this);
             };
-    
+
             /*
             * Turns iScroll `mousewheel` option on dynamically
             * https://github.com/cubiq/iscroll/issues/1036
@@ -289,7 +289,7 @@
 
 
         /**
-            
+
             SERVICE
         */
         var service = {
@@ -413,7 +413,7 @@
             $.extend($.easing,{ easeInOutCubic: function (x, t, b, c, d) {if ((t/=d/2) < 1) return c/2*t*t*t + b;return c/2*((t-=2)*t*t + 2) + b;}});
 
 
-            
+
             /**
             * Sets the autoScroll option.
             * It changes the scroll bar visibility and the history of the site as a result.
@@ -1080,7 +1080,7 @@
                     $(this).attr('src', $(this).attr('src') + sign + 'enablejsapi=1');
                 });
             }
-    
+
             /*
             * Enables the Vimeo videos API so we can control their flow if necessary.
             */
@@ -1090,7 +1090,7 @@
                     $(this).attr('src', $(this).attr('src') + sign + 'api=1');
                 });
             }
-    
+
             /*
             * Returns the prefix sign to use for a new parameter in an existen URL.
             *
@@ -1552,7 +1552,7 @@
                 }
 
                 //sections equal or smaller than the viewport height && scrolling down? || is resizing and its in the last section
-                else if(isScrollingDown || (isResizing && element.is(':last-child'))){
+                else if(isScrollingDown || (isResizing && element.is(':last-child'))){
                     //The bottom of the destination will be at the bottom of the viewport
                     position = sectionBottom;
                 }
@@ -1807,7 +1807,7 @@
                 //youtube videos
                 destiny.find('iframe[src*="youtube.com/embed/"]').each(function(){
                     var element = $(this).get(0);
-    
+
                     if( /youtube\.com\/embed\//.test($(this).attr('src')) && element.hasAttribute('data-autoplay')){
                         element.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
                     }
@@ -1832,7 +1832,7 @@
                 //youtube videos
                 destiny.find('iframe[src*="youtube.com/embed/"]').each(function(){
                     var element = $(this).get(0);
-    
+
                     if( /youtube\.com\/embed\//.test($(this).attr('src')) && !element.hasAttribute('data-keepplaying')){
                         $(this).get(0).contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}','*');
                     }
@@ -3074,7 +3074,7 @@
 
     function fullPageDirective(fullPageService) {
         var directive = {
-            link: link, 
+            link: link,
             restrict: 'A'
         };
 
