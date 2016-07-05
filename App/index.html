@@ -6,7 +6,9 @@
     <link rel="stylesheet" href="bower_components/angular/angular-csp.css" />
     <link rel="stylesheet" href="bower_components/animate.css/animate.css" />
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="directives/angular-fullpage.js/jquery.fullpage.min.css" />
     <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="directives/hobby-info/hobby-info.css" />
     <link rel="stylesheet" href="directives/main-info/main-info.css" />
     <link rel="stylesheet" href="directives/picture-modal/picture-modal.css" />
     <!-- endbuild -->
@@ -16,30 +18,41 @@
 <body>
     <div class="container" id="main" ng-controller="mainController">
 
-        <button type="button" id="smallSocialButton" class="btn slidebutton"
-                ng-click="slidebtnClick()" ng-show="animateCount % 2 === 0">
-            <span class="fa fa-bars"/>
-        </button>
+        <div full-page>
+            <div class="section" data-anchor="section1">
 
-        <div id="fullSocialButton" class="animated" ng-show="animateCount % 2 !== 0">
-            <div class="endbtn" ng-click="slidebtnClick()"><span class="fa fa-bars"/></div>
-            <!--Code for social badges goes here-->
-            <ul class="social-side-links">
-                <li cjgdraggable class="cjg-badge" ng-repeat="badge in badgelist">
-                    <a href={{badge.link}} tooltip={{badge.title}} tooltip-placement="bottom">
-                        <i class="fa fa-2x {{badge.image}}"></i>
-                    </a>
-                </li>
-            </ul>
+                <button type="button" id="smallSocialButton" class="btn slidebutton"
+                        ng-click="slidebtnClick()" ng-show="animateCount % 2 === 0">
+                    <span class="fa fa-bars"/>
+                </button>
+
+                <div id="fullSocialButton" class="animated" ng-show="animateCount % 2 !== 0">
+                    <div class="endbtn" ng-click="slidebtnClick()"><span class="fa fa-bars"/></div>
+                    <!--Code for social badges goes here-->
+                    <ul class="social-side-links">
+                        <li cjgdraggable class="cjg-badge" ng-repeat="badge in badgelist">
+                            <a href={{badge.link}} tooltip={{badge.title}} tooltip-placement="bottom">
+                                <i class="fa fa-2x {{badge.image}}"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <main-info model="mainInfoModel"></main-info>
+
+            </div>
+
+            <div class="section" data-anchor="section2">
+                <hobby-info model="hobbyInfoModel"></hobby-info>
+            </div>
+
+            <div class="section cjg-footer" data-anchor="section3">
+                <footer class="text-center">
+                    <p>Created using Angular and Bootstrap.</p>
+                    <p>Want the code? <a href="mailto:cory.gordinier+coderequest@gmail.com">Just ask!</a></p>
+                </footer>
+            </div>
         </div>
-
-        <!--MAIN block o' page-->
-        <main-info model="mainInfoModel"></main-info>
-
-        <footer class="text-center">
-            <p>Created using Angular and Bootstrap.</p>
-            <p>Want the code? <a href="mailto:cory.gordinier+coderequest@gmail.com">Just ask!</a></p>
-        </footer>
 
     </div>
 
@@ -54,9 +67,11 @@
     <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
     <script src="app.js"></script>
     <script src="Controllers/MainController.js"></script>
+    <script src="Directives/angular-fullpage.js/angular-fullpage.min.js"></script>
     <script src="Directives/cjgaccordian.js"></script>
     <script src="Directives/cjgcarousel.js"></script>
     <script src="Directives/cjgdraggable.js"></script>
+    <script src="Directives/hobby-info/hobby-info.js"></script>
     <script src="Directives/main-info/main-info.js"></script>
     <script src="Directives/picture-modal/picture-modal.js"></script>
     <script src="Models/badge.js"></script>

@@ -6,6 +6,7 @@
     angular.module('app', [
         'ui.bootstrap',
         'ngAnimate',
+        'fullpage.js',
         'templates-main',
     ])
 
@@ -14,6 +15,14 @@
         return function(val) {
             return $sce.trustAsHtml(val);
         };
-    }]);
+    }])
+
+    .config(function(fullPageConfigProvider) {
+        fullPageConfigProvider.setConfig({
+            scrollBar: true,
+            // sectionSelector: '.fp_section',
+            // slideSelector: '.fp_slide',
+        });
+    });
 
 }());

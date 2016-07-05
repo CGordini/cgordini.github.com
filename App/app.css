@@ -2,6 +2,12 @@ body {
   background-color: #eee;
 }
 
+.container {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100%;
+}
+
 .rounded {
     border:1px solid #;
     -webkit-border-radius: 10px;
@@ -107,6 +113,14 @@ body {
   padding-left: 3%;
   padding-right: 3%;
   padding-top: 3px;
+}
+
+.cjg-footer {
+    background-color: #00274C;
+}
+
+.cjg-footer footer {
+    color: #fff;
 }
 
 @font-face {

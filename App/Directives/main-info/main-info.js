@@ -12,7 +12,7 @@
               model: '=',
             },
             template:
-            '<div class="main-info-background" style="background:{{backgroundUrl}}; background-size:100%;">' +
+            '<div class="main-info-background" style="background:{{backgroundUrl}}; height: 100%;" >' + //style="background:{{backgroundUrl}}; background-size:100%;"
                 '<div class="main-info jumbotron about-me">' +
 
                     '<div class="row">' +

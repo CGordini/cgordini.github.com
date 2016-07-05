@@ -84,8 +84,8 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: 100%;
-    margin-left: -70px;
-    margin-right: -70px;
+/*    margin-left: -70px;
+    margin-right: -70px;*/
     padding-left: 118px;
     padding-right: 118px;
 }
