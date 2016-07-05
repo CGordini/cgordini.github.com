@@ -12,10 +12,11 @@
             this.eMonth = arguments[4] || "";
             this.eYear = arguments[5] || undefined;
             this.summary = arguments[6] || "";
-            this.address = arguments[7] || "";
-            this.city = arguments[8] || "";
-            this.state = arguments[9] || "";
-            this.time = arguments[10] || undefined;
+            this.description = arguments[7] || "";
+            this.address = arguments[8] || "";
+            this.city = arguments[9] || "";
+            this.state = arguments[10] || "";
+            this.time = arguments[11] || undefined;
         }
 
         return Work;

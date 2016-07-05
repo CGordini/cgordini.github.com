@@ -7,7 +7,8 @@
         ['$scope',
          '$window',
          'Badgelist',
-         function ($scope, $window, Badgelist) {
+         'Worklist',
+         function ($scope, $window, Badgelist, Worklist) {
             $scope.badgelist = Badgelist.getBadges();
 
             $scope.mainInfoModel = {
@@ -28,16 +29,10 @@
                     ]
             };
 
-            $scope.hobbyInfoModel = {
-                groups: [
-                    {'title': 'Step 1', 'content': 'ArbitraryContent'},
-                    {'title': 'Step 2', 'content': 'ArbitraryContent'},
-                    {'title': 'Step 3', 'content': 'ArbitraryContent'},
-                    {'title': 'Step 4', 'content': 'ArbitraryContent'},
-                    {'title': 'Step 5', 'content': 'ArbitraryContent'},
-                    {'title': 'Step 6', 'content': 'ArbitraryContent'},
-                    {'title': 'Step 7', 'content': 'ArbitraryContent'},
-                ]
+            var jobs = Worklist.getWork();
+
+            $scope.workInfoModel = {
+                jobs: jobs
             };
 
             $scope.toggleSlideButton = false;

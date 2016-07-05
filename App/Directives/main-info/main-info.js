@@ -79,8 +79,7 @@
                     var _templatePath = function(template) {
                         return 'Directives/picture-modal/' + template + '.2js.html';
                     };
-
-
+                    
                     var modalInstance = $uibModal.open({
                         templateUrl: _templatePath('picture-modal'),
                         // backdrop: 'static',
