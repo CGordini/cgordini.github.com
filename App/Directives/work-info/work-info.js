@@ -15,6 +15,7 @@
             '<div class="work-info-background">' + //style="background:{{backgroundUrl}}; background-size:100%;"
                 '<div class="work-info jumbotron">' +
 
+                    //TODO: move this to its own directive??
                     '<uib-accordion close-others="oneAtATime">' +
                         '<uib-accordion-group ng-repeat="job in model.jobs | orderBy:\'-time\'">' +
                             '<uib-accordion-heading>' +
@@ -35,7 +36,18 @@
                                     '<div class="col-xs-3">{{job.sMonth}} {{job.sYear}} - {{job.eMonth}} {{job.eYear}}</div>'+
                                 '</div>' +
                             '</uib-accordion-heading>' +
-                            '{{job.summary}}' +
+                            '<div class="row">' +
+                                '<div class="col-xs-12">' +
+                                    '{{job.summary}}' +
+                                '</div>' +
+                            '</div>' +
+                            '<br/>' +
+                            '<div class="row">' +
+                                '<div class="col-xs-12">' +
+                                    '{{job.address}}, <br />' +
+                                    '{{job.city}}&nbsp;{{job.state}}' +
+                                '</div>' +
+                            '</div>' +
                         '</uib-accordion-group>' +
                     '</uib-accordion>' +
 
