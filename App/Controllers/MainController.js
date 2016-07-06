@@ -35,6 +35,14 @@
                 jobs: jobs
             };
 
+            //TODO: pull these via some magic API and a different Model (see WorkList)
+            $scope.hobbyInfoModel = {
+                slides: [
+                    {'title': 'title1', 'image': 'http://i.imgur.com/aHppaKY.jpg', 'content': 'lorem ipsum'},
+                    {'title': 'title2', 'image': 'http://i.imgur.com/r11PVRy.jpg', 'content': 'ipsum lorem'}
+                ]
+            };
+
             $scope.toggleSlideButton = false;
 
             $scope.animateCount = 0;

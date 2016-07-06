@@ -1,0 +1,9 @@
+.hobby-info-container {
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+.hobby-info-container .slide-image {
+  max-width: 100px;
+  max-height: auto;
+}

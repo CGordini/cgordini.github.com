@@ -141,6 +141,10 @@ body {
     background-size: cover;
 }
 
+.slide {
+    background-size: cover;
+}
+
 #section0 {
     background-image: url("files/images/map.png");
 }
