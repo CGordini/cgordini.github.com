@@ -19,23 +19,25 @@
     <div class="container" id="main" ng-controller="mainController">
 
         <div full-page>
-            <div class="section" data-anchor="section1">
+            <div class="section" id="section0" data-anchor="section1">
 
-                <button type="button" id="smallSocialButton" class="btn slidebutton"
-                        ng-click="slidebtnClick()" ng-show="animateCount % 2 === 0">
-                    <span class="fa fa-bars"/>
-                </button>
+                <div class="button-top">
+                    <button type="button" id="smallSocialButton" class="btn slidebutton"
+                            ng-click="slidebtnClick()" ng-show="animateCount % 2 === 0">
+                        <span class="fa fa-bars"/>
+                    </button>
 
-                <div id="fullSocialButton" class="animated" ng-show="animateCount % 2 !== 0">
-                    <div class="endbtn" ng-click="slidebtnClick()"><span class="fa fa-bars"/></div>
-                    <!--Code for social badges goes here-->
-                    <ul class="social-side-links">
-                        <li cjgdraggable class="cjg-badge" ng-repeat="badge in badgelist">
-                            <a href={{badge.link}} tooltip={{badge.title}} tooltip-placement="bottom">
-                                <i class="fa fa-2x {{badge.image}}"></i>
-                            </a>
-                        </li>
-                    </ul>
+                    <div id="fullSocialButton" class="animated" ng-show="animateCount % 2 !== 0">
+                        <div class="endbtn" ng-click="slidebtnClick()"><span class="fa fa-bars"/></div>
+                        <!--Code for social badges goes here-->
+                        <ul class="social-side-links">
+                            <li cjgdraggable class="cjg-badge" ng-repeat="badge in badgelist">
+                                <a href={{badge.link}} tooltip={{badge.title}} tooltip-placement="bottom">
+                                    <i class="fa fa-2x {{badge.image}}"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
                 <main-info model="mainInfoModel"></main-info>
@@ -44,11 +46,11 @@
 
             <!--TODO: hobby section goes here-->
 
-            <div class="section" data-anchor="section2">
+            <div class="section" id="section2" data-anchor="section2">
                 <work-info model="workInfoModel"></work-info>
             </div>
 
-            <div class="section cjg-footer" data-anchor="section3">
+            <div class="section cjg-footer" id="section3" data-anchor="section3">
                 <footer class="text-center">
                     <p>Created using Angular and Bootstrap.</p>
                     <p>Want the code? <a href="mailto:cory.gordinier+coderequest@gmail.com">Just ask!</a></p>

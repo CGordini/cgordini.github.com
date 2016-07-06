@@ -78,24 +78,7 @@
     border-color: orangered;
 }
 
-.main-info-background {
-    /*display: inline-block;*/
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: 100%;
-    padding-top: 50px;
-    padding-left: 118px;
-    padding-right: 118px;
-    padding-bottom: 118px;
-}
-
-@media (max-width: 978px) {
-    .main-info-background {
-        margin-left: -124px;
-        margin-right: -124px;
-        padding-left: 124px;
-        padding-right: 124px;
-        background-size: 100%;
-    }
+.main-info-container {
+    padding-left: 7%;
+    padding-right: 7%;
 }

@@ -12,7 +12,7 @@
               model: '=',
             },
             template:
-            '<div class="main-info-background" style="background:{{backgroundUrl}}; background-position: center;" >' + //style="background:{{backgroundUrl}}; background-size:100%;"
+            '<div class="main-info-container">' +
                 '<div class="main-info jumbotron about-me">' +
 
                     '<div class="row">' +
@@ -72,14 +72,12 @@
                 '</div>' +
             '</div>',
             link: function(scope){
-                scope.backgroundUrl = "url(\"files/images/map.png\") no-repeat";
-
                 scope.openModal = function () {
 
                     var _templatePath = function(template) {
                         return 'Directives/picture-modal/' + template + '.2js.html';
                     };
-                    
+
                     var modalInstance = $uibModal.open({
                         templateUrl: _templatePath('picture-modal'),
                         // backdrop: 'static',

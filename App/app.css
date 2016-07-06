@@ -1,5 +1,10 @@
+html {
+    min-height: 100%;
+}
+
 body {
   background-color: #eee;
+  min-height: 100%;
 }
 
 .container {
@@ -98,6 +103,10 @@ body {
     }
 }*/
 
+.button-top {
+    height: 40px;
+}
+
 .social-side-links {
     display: inline-block;
     margin: 0px;
@@ -126,4 +135,16 @@ body {
 @font-face {
     font-family: WeblySleekUi;
     src: url('files/fonts/weblysleekuisl.ttf');
+}
+
+.section {
+    background-size: cover;
+}
+
+#section0 {
+    background-image: url("files/images/map.png");
+}
+
+#section2 {
+    background-image: url("files/images/paper.jpg");
 }
