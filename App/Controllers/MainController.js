@@ -8,7 +8,8 @@
          '$window',
          'Badgelist',
          'Worklist',
-         function ($scope, $window, Badgelist, Worklist) {
+         'Hobbylist',
+         function ($scope, $window, Badgelist, Worklist, Hobbylist) {
             $scope.badgelist = Badgelist.getBadges();
 
             $scope.mainInfoModel = {
@@ -30,17 +31,14 @@
             };
 
             var jobs = Worklist.getWork();
-
             $scope.workInfoModel = {
                 jobs: jobs
             };
 
-            //TODO: pull these via some magic API and a different Model (see WorkList)
+
+            var slides = Hobbylist.getSlides();
             $scope.hobbyInfoModel = {
-                slides: [
-                    {'title': 'title1', 'image': 'http://i.imgur.com/aHppaKY.jpg', 'content': 'lorem ipsum'},
-                    {'title': 'title2', 'image': 'http://i.imgur.com/r11PVRy.jpg', 'content': 'ipsum lorem'}
-                ]
+                slides: slides
             };
 
             $scope.toggleSlideButton = false;

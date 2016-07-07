@@ -149,6 +149,10 @@ body {
     background-image: url("files/images/map.png");
 }
 
-#section2 {
+#section1 {
     background-image: url("files/images/paper.jpg");
+}
+
+[id^="slide"] {
+    background-image: url("files/images/tiretracks.png");
 }
