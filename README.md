@@ -26,3 +26,8 @@ STOCK IMAGE SOURCES:
 
 http://waxsphere-stock.deviantart.com/art/asphalt-stock-50308707
 http://stampndesign.blogspot.com/2011/08/tires-treads-free-mds-punches.html
+
+FONT SOURCES:
+
+http://www.dafont.com/weblysleek-ui.font
+https://github.com/google/fonts/tree/master/ofl/montserrat

@@ -137,6 +137,11 @@ body {
     src: url('files/fonts/weblysleekuisl.ttf');
 }
 
+@font-face {
+    font-family: Montserrat;
+    src: url('files/fonts/Montserrat-Regular.ttf');
+}
+
 .section {
     background-size: cover;
 }
