@@ -16,8 +16,8 @@
                 //TODO: dynamically swap these out with help of a Modal
                 curImage:
                 {
-                    pic: 'files/images/img11.jpg',
-                    title: '481'
+                    pic: 'files/images/img7.jpg',
+                    title: 'Just a boy and his dog'
                 },
                 header: 'Cory Gordinier',
                 text:
