@@ -1538,6 +1538,8 @@
             function getDestinationPosition(element){
                 var elemPosition = element.position();
 
+                if (!elemPosition) {return;}
+
                 //top of the desination will be at the top of the viewport
                 var position = elemPosition.top;
                 var isScrollingDown =  elemPosition.top > previousDestTop;
