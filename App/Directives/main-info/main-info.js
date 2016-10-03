@@ -64,7 +64,7 @@
                             'a Big Ten interview</a> as well as <a href="http://dme.engin.umich.edu/grace/#-home">a University of Michigan informative video.</a> <br /><br />' +
 
                             'As a little about myself: I consider myself a dog person, a fan of fashion and all things internally combusted.<br/>' +
-                            'I currently own a 2007 Ford Mustang and a 2005 Kawasaki Ninja; when I\'m not working or watching football,<br/>' +
+                            'I currently own a <a href="http://i.imgur.com/r11PVRy.jpg">2007 Ford Mustang and a 2005 Kawasaki Ninja</a>; when I\'m not working or watching football,<br/>' +
                             'you can find me in the garage or on assorted tracks throughout Michigan.<br/><br/>' +
                             'I also am quite a beer snob (my favorite is Bell\'s Brewing from Kalamazoo, Michigan), a guitarist,<br/>' +
                             'and an electronics hobbyist (with an interest in Arduino and Raspberry Pi microcontrollers).' +
