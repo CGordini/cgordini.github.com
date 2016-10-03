@@ -63,8 +63,10 @@
                             'My work for the class was the subject of <a href="http://btn.com/2014/02/14/btn-livebig-michigan-premiere-tonight/">' +
                             'a Big Ten interview</a> as well as <a href="http://dme.engin.umich.edu/grace/#-home">a University of Michigan informative video.</a> <br /><br />' +
 
-                            'As a little about myself: I consider myself a fan of fashion and cars (own a 2007 Ford Mustang),<br/>' +
-                            'a beer snob (my favorite is Bell\'s Brewing from Kalamazoo, Michigan), a guitarist,<br/>' +
+                            'As a little about myself: I consider myself a dog person, a fan of fashion and all things internally combusted.<br/>' +
+                            'I currently own a 2007 Ford Mustang and a 2005 Kawasaki Ninja; when I\'m not working or watching football,<br/>' +
+                            'you can find me in the garage or on assorted tracks throughout Michigan.<br/><br/>' +
+                            'I also am quite a beer snob (my favorite is Bell\'s Brewing from Kalamazoo, Michigan), a guitarist,<br/>' +
                             'and an electronics hobbyist (with an interest in Arduino and Raspberry Pi microcontrollers).' +
                         '</div>' +
                     '</div>' +

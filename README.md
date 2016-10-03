@@ -1,12 +1,12 @@
 HOW TO RUN/BUILD/ETC
 
-0) Make sure all dependencies are installed:
-	>npm install -g grunt-cli
-	>npm install -g grunt
-	>npm install grunt --save-dev
-	>npm install -g bower
-	>npm install
-	>bower install;
+0) Make sure all dependencies are installed:  
+	>npm install -g grunt-cli  
+	>npm install -g grunt  
+	>npm install grunt --save-dev  
+	>npm install -g bower  
+	>npm install  
+	>bower install;  
 
 1) Check that App/index.html is working after [any changes].
 

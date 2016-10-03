@@ -17,8 +17,10 @@
                                             2011,
                                             "May",
                                             2012,
-                                            "Software-Defined Radio development, in conjunction with Microsoft Research",
-                                            "",
+                                            "Windows Driver Development",
+                                            "Developed a cooperative network algorithm in conjunction with Microsoft Research,\n" + 
+                                            "and worked it into a NDIS driver for proprietary Microsoft Research software-developed-radio hardware as a proof-of-concept.\n" +
+                                            "Displayed at Microsoft Research New England.",
                                             "1301 Beal Ave",
                                             "Ann Arbor",
                                             "MI",
@@ -32,7 +34,8 @@
                                             "August",
                                             2012,
                                             "Web Development",
-                                            "",
+                                            "Developed a JQuery/HTML/CSS-based frontend feature for a legacy product.\n" +
+                                            "Assisted with wiring up backend to communicate with aforementioned new frontend.",
                                             "301 Congress Ave #700",
                                             "Austin",
                                             "TX",
@@ -46,7 +49,7 @@
                                             "August",
                                             2013,
                                             "Workpapers CS/Engagement",
-                                            "",
+                                            "Assisted with development of assorted features for a C# Windows Forms program.",
                                             "7322 Newman Blvd",
                                             "Dexter",
                                             "MI",
@@ -59,10 +62,11 @@
                                             2014,
                                             "Current",
                                             "",
-                                            "Document Management System Development",
-                                            "",
-                                            "7322 Newman Blvd",
-                                            "Dexter",
+                                            "Document Management Services Development/Accounting Development",
+                                            "Assisted with development of next-generation AngularJS-based web program.\n" +
+                                            "Upon successful release, returned to previous Windows Forms development.",
+                                            "6300 Interfirst Drive",
+                                            "Ann Arbor",
                                             "MI",
                                             4
                                         );

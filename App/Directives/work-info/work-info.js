@@ -43,6 +43,12 @@
                         '<br/>' +
                         '<div class="row">' +
                             '<div class="col-xs-12">' +
+                                '{{job.description}}' +
+                            '</div>' +
+                        '</div>' +
+                        '<br/>' +
+                        '<div class="row">' +
+                            '<div class="col-xs-12">' +
                                 '{{job.address}}, <br />' +
                                 '{{job.city}}&nbsp;{{job.state}}' +
                             '</div>' +
