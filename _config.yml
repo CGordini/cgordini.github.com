@@ -1,0 +1,63 @@
+# Setup
+title: Cory Gordinier
+tagline: Dog Dad, Gear Head, Software Engineer ## FIXME: some title you like
+url: https://davidbrownman.com ## FIXME: this almost certainly won't be your prod url; use corygordinier.com
+baseurl: "/cory" # FIXME: you will probably replace this with ""
+permalink: /posts/:year/:title/
+
+kramdown:
+  footnote_backlink: "&#10548;"
+
+# Gems
+plugins:
+  - jekyll-gist
+  - jekyll-seo-tag
+  - jekyll-target-blank
+
+# Optimize Jekyll
+exclude:
+  - .editorconfig
+  - .git
+  - .jekyll-cache
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - README.md
+
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+# Options
+
+# FIXME: decide if you want google analytics
+# Replace this value and uncomment to enable Google Analytics tracking
+# ga_analytics: UA-000000-0
+
+# FIXME: add/change as desired
+social:
+  instagram: https://www.instagram.com/cgordini/
+  github: https://github.com/cgordini/
+  twitter: https://twitter.com/cgordini/
+
+nav:
+  # each has a name (the path) and optionally, a label (to show in the nav bar)
+  # FIXME: add/customize these as desired
+  - name: about
+  - name: contact
+    label: contact me
+  - name: posts
+
+author:
+  name: Cory Gordinier
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: "_posts"
+    values:
+      layout: "post" # overrides previous default layout
