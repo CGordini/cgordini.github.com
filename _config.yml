@@ -1,8 +1,8 @@
 # Setup
 title: Cory Gordinier
-tagline: Dog Dad, Gear Head, Software Engineer ## FIXME: some title you like
-url: https://davidbrownman.com ## FIXME: this almost certainly won't be your prod url; use corygordinier.com
-baseurl: "/cory" # FIXME: you will probably replace this with ""
+tagline: Professional Software Engineer, Amateur Race Car Driver & Mechanic
+url: https://corygordinier.com
+baseurl: "" # FIXME: you will probably replace this with ""
 permalink: /posts/:year/:title/
 
 kramdown:
@@ -36,9 +36,11 @@ sass:
 
 # FIXME: add/change as desired
 social:
+  facebook: https://www.facebook.com/cory.gordinier
   instagram: https://www.instagram.com/cgordini/
-  github: https://github.com/cgordini/
   twitter: https://twitter.com/cgordini/
+  youtube: https://www.youtube.com/channel/UC8yxeZmwfM0Eao_TOIPJn0Q
+  github: https://github.com/cgordini/
 
 nav:
   # each has a name (the path) and optionally, a label (to show in the nav bar)
