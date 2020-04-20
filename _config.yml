@@ -2,8 +2,8 @@
 title: Cory Gordinier
 tagline: Professional software engineer, amateur mechanic and race car driver, tall person.
 url: https://corygordinier.com
-baseurl: "" # FIXME: you will probably replace this with ""
-permalink: /posts/:year/:title/
+baseurl: ""
+permalink: /posts/:year/:month/:title/
 
 kramdown:
   footnote_backlink: "&#10548;"
@@ -60,7 +60,7 @@ nav:
   - name: about
   - name: contact
     # label: contact me
-  - name: news
+  - name: posts
 
 author:
   name: Cory Gordinier

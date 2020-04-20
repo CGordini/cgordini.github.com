@@ -1,5 +1,6 @@
 ---
 title: "April Fools"
+month: April
 ---
 
 This is a markdown post about april fools.
