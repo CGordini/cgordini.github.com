@@ -1,0 +1,20 @@
+---
+title: News
+---
+
+I blog from time-to-time. Here are those posts, sorted in reverse-chronological
+order.
+
+<hr />
+
+{% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date:
+'%Y'" %} {% for year in postsByYear %}
+<h3>{{ year.name }}</h3>
+<ul>
+  {% for post in year.items %}
+  <li>
+    <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+  </li>
+  {% endfor %}
+</ul>
+{% endfor %}

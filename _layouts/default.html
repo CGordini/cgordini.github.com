@@ -12,8 +12,9 @@ layout: compress
         <!-- everything besides the footer -->
         <header class="masthead">
           <h3 class="masthead-title">
-            <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a
-            ><br />
+            <!--<a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>-->
+            {{ site.title }}
+            <br />
             <small>{{ site.tagline }}</small>
           </h3>
 
@@ -22,9 +23,15 @@ layout: compress
             <ul id="navigation-list">
               {% for navlink in site.nav %}
               <li>
+                {% if navlink.name != 'about' %}
                 <a href="{{ site.baseurl }}/{{ navlink.name }}/">{{
                   navlink.label | default: navlink.name | downcase
                 }}</a>
+                {% else %}
+                <a href="{{ site.baseurl }}/">{{
+                  navlink.label | default: navlink.name | downcase
+                }}</a>
+                {% endif %}
               </li>
               {% if forloop.last == false %}
               <li>|</li>

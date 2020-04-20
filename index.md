@@ -1,22 +1,13 @@
 ---
-# these lines are needed to be picked up as a site page.
+#title: About
 ---
 
-This page is under heavy construction.
+### Professionally
 
-Pay no attention to the wizard behind the curtain.
+I am a proud alumni of the University of Michigan (Class of 2014), having received my Bachelors of Science in Engineering from their College of Computer Science. By day, I'm a software engineer for Thomson Reuters, specializing in C# Windows Professional Forms and Azure Dev Ops builds, programming to earn a living and pay for my dog and my toys.
 
-<!-- Welcome to my site!
+### Personally
 
-Here, you may find content related to my interests, such as:
+I am a proud dog-dad to a <a class="hover_img" href="/assets/images/cassie.jpg">lab/pitt mix<span><img src="/assets/images/cassie.jpg" height="228px" width="345px"/></span></a>, and I either play video games (often streaming on Twitch), or watch others play games I neither have the time nor energy to beat. My main hobby revolves around <a class="hover_img" href="/assets/images/miata.jpg">my car<span><img src="/assets/images/miata.jpg" height="228px" width="345px"/></span></a>, which I wrench on in my garage and built from the ground up; then drive in open track days (OTDs) and high-performance driving events (HPDEs) throughout the state of Michigan. Occasionally, I combine these hobbies and stream my races and repair sessions in my garage onto Twitch or YouTube.
 
-- My Dog
-- Cars
-- Programming
-
-### Links I like:
-
-- [Microsoft SORA](http://research.microsoft.com/en-us/projects/sora/)
-- [Microsoft SORA](http://research.microsoft.com/en-us/projects/sora/)
-- [Microsoft SORA](http://research.microsoft.com/en-us/projects/sora/)
--->
+For further information on track days and archived streams and pictures, please see the "Posts" section.
