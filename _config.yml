@@ -37,22 +37,22 @@ sass:
 social:
     - title: facebook
       address: https://www.facebook.com/cory.gordinier
-      class: fab fa-facebook
+      class: fab fa-facebook fab-override
     - title: instagram
       address: https://www.instagram.com/cgordini/
-      class: fab fa-instagram
+      class: fab fa-instagram fab-override
     - title: twitter
       address: https://www.twitter.com/cgordini/
-      class: fab fa-twitter
+      class: fab fa-twitter fab-override
     - title: twitch
       address: https://www.twitch.tv/cgordini
-      class: fab fa-twitch
+      class: fab fa-twitch fab-override
     - title: youtube
       address: https://www.youtube.com/channel/UC8yxeZmwfM0Eao_TOIPJn0Q
-      class: fab fa-youtube
+      class: fab fa-youtube fab-override
     - title: github
       address: https://github.com/cgordini/
-      class: fab fa-github
+      class: fab fa-github fab-override
 
 nav:
   # each has a name (the path) and optionally, a label (to show in the nav bar)

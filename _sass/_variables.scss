@@ -1,8 +1,8 @@
 // Color scheme for light and dark modes.
 
 // pulled from https://brand.umich.edu/design-resources/colors/
-$light: #00274c;
-$dark: #ffcb05;
+$visited-light: #00274c;
+$visited-dark: #ffcb05;
 
 // Highlighting color for code block borders and language name.
 
@@ -25,9 +25,11 @@ $root-font-size: 16px;
 $root-line-height: 1.5;
 
 $body-color: rgba(0, 0, 0, 0.8);
+$light: $body-color;
 $body-bg: rgba(0, 0, 0, 0.03);
 $body-color-dark: hsla(0, 0%, 100%, 0.8);
-$body-bg-dark: rgba(0, 0, 0, 0.9);
+$dark: $body-color-dark;
+$body-bg-dark:#181818; //rgba(0, 0, 0, 0.9);
 
 $large-breakpoint: 38em;
 $large-font-size: 20px;
