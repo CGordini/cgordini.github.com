@@ -3,6 +3,8 @@ layout: default
 ---
 
 <article class="page">
+  {% if page.title != "" and page.title != "Professionally" %}
   <h1 class="page-title">{{ page.title | smartify }}</h1>
+  {% endif %}
   {{ content | smartify }}
 </article>
