@@ -34,13 +34,25 @@ sass:
 # Replace this value and uncomment to enable Google Analytics tracking
 # ga_analytics: UA-000000-0
 
-# FIXME: add/change as desired
 social:
-  facebook: https://www.facebook.com/cory.gordinier
-  instagram: https://www.instagram.com/cgordini/
-  twitter: https://twitter.com/cgordini/
-  youtube: https://www.youtube.com/channel/UC8yxeZmwfM0Eao_TOIPJn0Q
-  github: https://github.com/cgordini/
+    - title: facebook
+      address: https://www.facebook.com/cory.gordinier
+      class: fab fa-facebook
+    - title: instagram
+      address: https://www.instagram.com/cgordini/
+      class: fab fa-instagram
+    - title: twitter
+      address: https://www.twitter.com/cgordini/
+      class: fab fa-twitter
+    - title: twitch
+      address: https://www.twitch.tv/cgordini
+      class: fab fa-twitch
+    - title: youtube
+      address: https://www.youtube.com/channel/UC8yxeZmwfM0Eao_TOIPJn0Q
+      class: fab fa-youtube
+    - title: github
+      address: https://github.com/cgordini/
+      class: fab fa-github
 
 nav:
   # each has a name (the path) and optionally, a label (to show in the nav bar)

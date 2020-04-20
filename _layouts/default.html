@@ -40,7 +40,7 @@ layout: compress
 
       <footer class="footer">
         {% for social_link in site.social %}
-        <a href="{{ social_link[1] }}">{{ social_link[0] }}</a>
+        <a href="{{ social_link.address }}" class="{{ social_link.class }}" title="{{ social_link.title }}"></a>
         {% if forloop.last == false %} | {% endif %} {% endfor %}
       </footer>
     </div>
