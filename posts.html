@@ -9,10 +9,12 @@ order.
 
 {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %} 
 {% for year in postsByYear %}
-  <h3>{{ year.name }}</h3>
-  {% assign postsByMonth = year.items | group_by_exp:"post", "post.date | date: '%B'" %}
-  {% for month in postsByMonth %}
-  <h4>{{ month.name }}</h4>
+<h3>{{ year.name }}</h3>
+{% assign postsByMonth = year.items | group_by_exp:"post", "post.date | date: '%B'" %}
+{% for month in postsByMonth %}
+<ul>
+  <li>
+    {{ month.name }}
     <ul>
       {% for post in month.items %}
       <li>
@@ -20,5 +22,7 @@ order.
       </li>
       {% endfor %}
     </ul>
-  {% endfor %}
+  </li>
+</ul>
+{% endfor %}
 {% endfor %}

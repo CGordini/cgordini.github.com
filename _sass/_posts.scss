@@ -61,8 +61,6 @@ figure {
   }
 }
 
-// End of alterations for captions.
-
 .page,
 .post {
   margin-bottom: 1em;
@@ -71,32 +69,39 @@ figure {
     margin-top: 0.25rem;
   }
 
+  a {
+    border-bottom: 1px solid $body-color;
+  
+    &:visited {
+      border-bottom: 1px solid $visited-light;
+    }
+  
+    @media (prefers-color-scheme: dark) {
+      border-bottom: 1px solid $body-color-dark;
+  
+      &:visited {
+        border-bottom: 1px solid $visited-dark;
+      }
+    }
+  }
+
   // the posts page is all maize in dark mode, doesn't look great
   li {
     a {
       color: $body-color;
       border-bottom: 1px solid $body-color;
+      
+      // &:visited {
+      //   border-bottom: 1px solid $body-color;
+      // }
+
       @media (prefers-color-scheme: dark) {
         color: $body-color-dark;
         border-bottom: 1px solid $body-color-dark;
-      }
-    }
-  }
 
-  a {
-    border-bottom: 1px solid $body-color;
-
-    &:visited {
-      border-bottom: 1px solid $visited-light;
-    }
-  }
-
-  @media (prefers-color-scheme: dark) {
-    a {
-      border-bottom: 1px solid $body-color-dark;
-
-      &:visited {
-        border-bottom: 1px solid $visited-dark;
+        // &:visited {
+        //   border-bottom: 1px solid $body-color-dark;
+        // }
       }
     }
   }
