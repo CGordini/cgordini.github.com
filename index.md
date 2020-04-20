@@ -4,7 +4,7 @@
 
 ### Professionally
 
-I am a proud alumni of the University of Michigan (Class of 2014), having received my Bachelors of Science in Engineering from their College of Computer Science. By day, I'm a software engineer for Thomson Reuters, specializing in C# Windows Professional Forms and Azure Dev Ops builds, programming to earn a living and pay for my dog and my toys.
+I am a proud alumnus of the University of Michigan (Class of 2014), having received my Bachelors of Science in Engineering from their College of Computer Science. By day, I'm a software engineer for Thomson Reuters, specializing in C# Windows Professional Forms and Azure Dev Ops builds, programming to earn a living and pay for my dog and my toys.
 
 ### Personally
 
