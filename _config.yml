@@ -1,6 +1,6 @@
 # Setup
 title: Cory Gordinier
-tagline: Professional Software Engineer, Amateur Race Car Driver & Mechanic
+tagline: Professional software engineer, amateur mechanic and race car driver, tall person.
 url: https://corygordinier.com
 baseurl: "" # FIXME: you will probably replace this with ""
 permalink: /posts/:year/:title/
@@ -59,7 +59,7 @@ nav:
   # FIXME: add/customize these as desired
   - name: about
   - name: contact
-    label: contact me
+    # label: contact me
   - name: posts
 
 author:
