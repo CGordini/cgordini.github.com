@@ -2,22 +2,12 @@
 title: About
 ---
 
-<p class="message">
-  You can rename or delete this example page as you see necessary.
-</p>
+### Professionally
 
-### What is Lorem Ipsum?
+I am a proud alumni of the University of Michigan (Class of 2014), having received my Bachelors of Science in Engineering from their College of Computer Science. By day, I'm a software engineer for Thomson Reuters, specializing in C# Windows Professional Forms and Azure Dev Ops builds, programming to earn a living and pay for my dog and my toys.
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+### Personally
 
-### Where does it come from?
+I am a proud dog-dad to a <a class="hover_img" href="/assets/images/cassie.jpg">lab/pitt mix<span><img src="/assets/images/cassie.jpg" height="228px" width="345px"/></span></a>, and I either play video games (often streaming on Twitch), or watch others play games I neither have the time nor energy to beat. My main hobby revolves around <a class="hover_img" href="/assets/images/miata.jpg">my car<span><img src="/assets/images/miata.jpg" height="228px" width="345px"/></span></a>, which I wrench on in my garage and built from the ground up; then drive in open track days (OTDs) and high-performance driving events (HPDEs) throughout the state of Michigan. Occasionally, I combine these hobbies and stream my races and repair sessions in my garage onto Twitch or YouTube.
 
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-
-### Why do we use it?
-
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-
-### This Site
-
-...was built in 2020 using Victor Johnson's [Noir](https://github.com/essentialenemy/noir/) theme for [Jekyll](https://jekyllrb.com/) by [David Brownman](https://davidbrownman.com/).
+For further information on track days and archived streams and pictures, please see the "Posts" section.

@@ -42,6 +42,9 @@ layout: compress
         {% for social_link in site.social %}
         <a href="{{ social_link.address }}" class="{{ social_link.class }}" title="{{ social_link.title }}"></a>
         {% if forloop.last == false %} | {% endif %} {% endfor %}
+        <br/>
+        <br/>
+        <small> This site was built in 2020 based off Victor Johnson's <a href="https://github.com/essentialenemy/noir/">Noir</a> theme for <a href="https://jekyllrb.com/">Jekyll</a> by <a href="ttps://davidbrownman.com/">David Brownman</a>.</small>
       </footer>
     </div>
 

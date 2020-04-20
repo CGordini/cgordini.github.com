@@ -60,7 +60,7 @@ nav:
   - name: about
   - name: contact
     # label: contact me
-  - name: posts
+  - name: news
 
 author:
   name: Cory Gordinier
