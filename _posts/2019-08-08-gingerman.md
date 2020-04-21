@@ -8,7 +8,7 @@ As a preface, this was one of my favorite track days I've ever done in my life, 
 
 As a matter of fact, that's exactly what a good friend of mine and I did -- we left our respective jobs at noon and caravaned out, complete with walkie-talkies. I can't wait to do this again.
 
-Unfortunately, said good friend got roped into roadside-maintenance at the dead of night -- one of my radiator hoses finally blew (yay, 30 year old car) and you can see my coolant temp skyrocketing at the end of Session 2 as I come off track. This is why there was no session 3. I feel legitimately bad that he got roped into repair, and I definately owe him a dinner.
+Unfortunately, said good friend got roped into roadside-maintenance at the dead of night -- one of my radiator hoses finally blew (yay, 30 year old car) and you can see my coolant temp skyrocketing at the end of Session 2 as I come off track. This is why there was no session 3. I feel legitimately bad that he got roped into repair, and I definitely owe him a dinner.
 
 Still, I wouldn't trade this particular experience overall for the world.
 
