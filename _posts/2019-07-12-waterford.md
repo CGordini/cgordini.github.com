@@ -1,5 +1,5 @@
 ---
-title: Waterford Hills with Summer Track Days 
+title: Waterford Hills Track Day with Summer Track Days 
 ---
 
 Word of mouth lead me to a Waterford Hills OTD that allowed passengers -- a rarity amongst track days as often organizers don't want to pay the extra insurance, and the track owners themselves will refuse to.
