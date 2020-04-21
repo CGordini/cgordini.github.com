@@ -12,10 +12,10 @@ So he ended up inviting me out, and yeah, hooked. We've grown to be good friends
 
 AutoInterests runs two days at Gingerman every Memorial Weekend -- Saturdays your usual clockwise, Sundays counterclockwise. I am not immensely fond of counterclockwise, frankly, but when my friends like him are already there, or I have other friends willing to make devoted time on Sundays to hang, then I'm willing to bite the "I suck at this direction" bullet.
 
-This was the first testing of my [new A/V setup](/posts/2019/01/race-tech/), and there were certainly a handful of bugs, but overall, a track day where:
-a) very little things break (some always do. _always._ I think I split my exhaust header on this one due to a failed motor mount?)
-b) I am able to successfully test some code I slung myself
-c) I spend time with friends
+This was the first testing of my [new A/V setup](/posts/2019/01/race-tech/), and there were certainly a handful of bugs, but overall, a track day where:  
+a) very little things break (some always do. _always._ I think I split my exhaust header on this one due to a failed motor mount?)  
+b) I am able to successfully test some code I slung myself  
+c) I spend time with friends  
 
 is always a big win in my book.
 
