@@ -1,5 +1,5 @@
 ---
-layout: Gingerman Track Day - Track-Organized
+title: Gingerman Track Day - Track-Organized
 ---
 
 As a sort of birthday celebration, I arranged going out to the track with a handful of friends, either as spectators or as fellow participants. 

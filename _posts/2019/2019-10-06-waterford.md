@@ -1,5 +1,5 @@
 ---
-layout: Waterford Track Day - Track-Organized
+title: Waterford Track Day - Track-Organized
 ---
 
 Every year, Waterford Hills arranges something around [8 different open track days](http://www.waterfordhills.com/events-calendar.html). I actually got involved with being a corner worker and flagging some of them, and in return, they allowed me to do their last open track day of the year for a price I couldn't refuse.
