@@ -82,6 +82,10 @@ a {
   text-align: center;
 }
 
+.a-override {
+  border-bottom: none !important;
+}
+
 img {
   display: block;
   max-width: 100%;
