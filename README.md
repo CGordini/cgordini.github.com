@@ -25,11 +25,19 @@ There's also a hidden page at `/styles` that shows you what the css will look li
 
 ## Initial Setup
 
-1. Fork this repo
-2. (assuming you're hosting the site on Github, which you should) rename the repo to `cgordini.github.io`
-3. Address `FIXME` comments in `_config.yml` to customize the site to your liking
-4. Add a `CNAME` file with `corygordinier.com` (aka follow [these instructions](https://help.github.com/en/github/working-with-github-pages/configuring-a-custom-domain-for-your-github-pages-site)
-5. Probably remove the posts in `_posts` and replace them with items of your choosing.
+1. Git Pull (the usual)
+2. Make sure your computer has the Ruby SDK 
+(as of May 2020, I used RubyInstaller 2.6.6.1 + DevKit)
+https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-2.6.6-1/rubyinstaller-devkit-2.6.6-1-x64.exe
+(NOTE that I told it to install [1,3] when prompted)
+3. In a *Ruby* command prompt, run 
+   gem install bundler jekyll
+4. In a projectdir Ruby command prompt, run 
+   bundle install
+to go get all the latest things required to run this locally
+5. In a projectdir Ruby command prompt, run 
+   bundle exec jekyll serve --incremental
+to host the local version of code on localhost:4000
 6. Make sure your [github pages settings](https://help.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site) are as you want them (you're deploying from the `master` branch if it asks
 7. Push! The production site will correspond with whatever's in master.
 8. Edits can also be made in the Github UI. You know the drill.
