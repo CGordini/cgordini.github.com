@@ -69,6 +69,14 @@ figure {
     margin-top: 0.25rem;
   }
 
+  a.not-a-link {
+    border-bottom: none;
+
+    &:visited {
+      border-bottom: none;
+    }
+  }
+
   a {
     border-bottom: 1px solid $body-color;
   
@@ -104,6 +112,17 @@ figure {
         // }
       }
     }
+  }
+
+  ul.list-group.post-list-group {
+    display: block;
+    flex-direction: row;
+    padding-left: 40px;
+  }
+
+  li.list-group-item.post-list-group-item{
+    background-color: rbga(0,0,0,0);
+    border: 0px;
   }
 }
 
@@ -189,4 +208,22 @@ figure {
   float: right;
   width: auto;
   text-align: right;
+}
+
+//shamelessly stolen from Bootstrap 4.4.1
+.collapse:not(.show) {
+  display: none;
+}
+
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.35s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .collapsing {
+    transition: none;
+  }
 }
