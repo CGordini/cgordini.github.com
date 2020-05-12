@@ -55,13 +55,11 @@ layout: compress
               {% if forloop.last == false %} | {% endif %} {% endfor %}
             </div>
             <div class="col-3">
-              <aside>
-                <dark-mode-toggle id="dark-mode-toggle-1" mode="dark" appearance="toggle"></dark-mode-toggle>    
-              </aside>     
+              <a id="theme-toggle" onclick="modeSwitcher()"></a>
             </div>
           </div>
         </div>
-        <small> This site was built in 2020 based off Victor Johnson's <a href="https://github.com/essentialenemy/noir/">Noir</a> theme for <a href="https://jekyllrb.com/">Jekyll</a> by <a href="ttps://davidbrownman.com/">David Brownman</a>.</small>
+        <small> This site was built in 2020 based off Victor Johnson's <a href="https://github.com/essentialenemy/noir/">Noir</a> theme for <a href="https://jekyllrb.com/">Jekyll</a> by <a href="https://davidbrownman.com/">David Brownman</a>.</small>
       </footer>
     </div>
 
@@ -90,5 +88,7 @@ layout: compress
       ga("send", "pageview");
     </script>
     {% endif %}
+
+    <script src="../assets/js/mode-switcher.js"></script>
   </body>
 </html>
