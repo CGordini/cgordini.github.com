@@ -131,11 +131,3 @@ tbody tr:nth-child(odd) th {
     background-color: #2d2d2d;
   }
 }
-
-#dark-mode-toggle-1 {
-  --dark-mode-toggle-dark-icon: url("/assets/images/sun.svg");
-  --dark-mode-toggle-light-icon: url("/assets/images/moon.svg");
-
-  padding: 0px;
-  margin: 0px;
-}
