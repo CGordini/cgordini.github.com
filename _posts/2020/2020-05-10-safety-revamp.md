@@ -22,4 +22,14 @@ Unfortunately, this started a rabbit hole: they require spacers, due to the trap
 
 **Step 2:** The belts. I went with a [6-point 3" Schroth Profi](https://www.summitracing.com/parts/hsa-sr94540-0). I'm under the distinct impression 2" belts are only good if you have a HANS device (maybe next year), and that 6-point is a lot friendlier to males than 5-point.
 
-This had almost everything I wanted. Mounts to eyebolts that are installed under the seat (through the floor)
+This had almost everything I wanted. Mounts to eyebolts that are installed under the seat (through the floor, in positions I measured out); eyebolts in the stock seatbelt locations*, and then does harness wraps around my roll-bar (no more zip ties!!!).
+
+Except. The eyebolts directly collide against the Bell Raceworks seat brackets. Back to the ol' drawing board. Or rather, cut out unneccesary material until morale improves. Now the Raceworks brackets have giant slices missing, but don't collide...
+
+I'd be a little more worried about structural integrity of said brackets if they weren't cast out of single solid pieces of rather thick material. As far as safety compromises go, that one's pretty minor.
+
+**Step 3:** Repeat. I came across a slightly-used slightly-out-of-date Sparco Sprint; mounted that to a passenger-side PCI bracket (didn't care about fitment there because I'm not gonna be a passenger very often), and came across a slightly-used slightly-out-of-date 3" Schroth Profi. That one was WAY easier to install and didn't collide into the PCI bracket. Tada!
+
+[So now, broomstick: passed.](https://i.imgur.com/Z51rrmj.jpg) [Six-point SCCA compliant harnesses: installed](https://i.imgur.com/QWovINE.jpg). Oh, and I installed a proper 2.5" fire extinguisher, mounted directly to the rollbar, to go the extra mile.
+
+Safety: check.
