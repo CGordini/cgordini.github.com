@@ -4,7 +4,7 @@ title: Let's Talk - Data
 
 I'm a very analytical person. I like concrete, indisputable facts over feeling - that may be why I'm not a very good artist or cook. A "pinch of salt" and a "dash of pepper" just isn't specific enough for my taste (some pun intended).
 
-As such, the idea of "you should just brake later, harder" isn't well-defined enough for my liking. Nor is "you should be more left|outside on that turn". 
+As such, the idea of "you should just brake later, harder" isn't well-defined enough for my liking. Nor is "you should be more left (or outside) on that turn". 
 
 Unfortunately, the built-in GPS on...pretty much any smartphone pings the satelites at a rate of about once a second (1hz), and is resultingly not very accurate - a problem when running programs like [Harry's Lap Timer](https://www.gps-laptimer.de/), which will give you off readings on speeds, position on the track, and overall lap time.
 
