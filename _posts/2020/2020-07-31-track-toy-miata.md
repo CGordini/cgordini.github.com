@@ -8,7 +8,7 @@ Kind of like the car...
 
 [1991 Mazda Miata 1.6L DOHC, 5-speed manual](https://i.imgur.com/TrwsdBr.jpg)  
 
-ENGINE: bone stock...for now. Required maintenance only. 
+ENGINE: NONE - Blew the 1.6L :(
 
 EXHAUST: [Jackson Racing header](https://trackdogracing.com/header-jr.aspx) & [Racing Beat muffler/connecting pipe](https://mossmiata.com/1990-1997-miata/exhaust/exhaust-systems-mufflers-pipes-tips/power-pulse-muffler-by-racing-beat)
 

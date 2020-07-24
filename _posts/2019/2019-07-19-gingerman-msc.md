@@ -1,5 +1,5 @@
 ---
-title: Gingerman Track Day - Motor State Challenge
+title: Gingerman Track Day - Motor State Challenge 2019
 ---
 
 The [Motor State Challenge hosted by Lane Automotive](https://www.motorstate.com/motor-state-challenge/) is another one of those "I do this every single year if I can" events, and for the same reason as my annual [Memorial Weekend Gingerman trip](/posts/2019/05/gingerman/) - the same group of friends run both.
