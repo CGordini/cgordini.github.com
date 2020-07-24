@@ -24,7 +24,7 @@ Lost all power, dead stick, coasted through 10B and far, far off the track.
 
 Wouldn't turn back over. Luckily, Daddy had come out to watch, and I was able to hitch a ride home with the majority of my gear. (Daddy needs to get a truck or something with towing capacity...)
 
-A good friend of mine bailed me out the next day and helped me tow her home; I actually had to go back a THIRD time to pick up the tire trailer.
+An incredibly kind friend of mine bailed me out the next day and helped me tow her home; I actually had to go back a THIRD time to pick up the tire trailer.
 
 Further analysis shows: [she's so done.](https://i.imgur.com/ms949Wq.png)
 
