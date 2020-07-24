@@ -1,0 +1,43 @@
+---
+title: All Good Things...(Motor State Challenge 2020)
+---
+
+This was _supposed_ to be an epic adventure - trailering out a set of Hoosiers, running 7 sessions in a single day (4 with some good friends during the Motor State Challenge, 3 with the SCCA during Track Night in America), and coming home.
+
+Going out was fine, if not a _tiny_ bit annoying having to move the trailer around whilst we did the cruise-in, then picking up the trailer, going to the track, dropping it off, and then _finally_ getting to the hotel (which is always a little extra nerve-wracking during COVID-19).
+
+First session was odd. Didn't warm up my tires on the first lap, second lap I started to push and get a feel for having more grip, and then whoop, missed my braking in 3, missed the apex, car kicked out fiercely and into the grass I went. Could have been worse...but of course, that's the session that the GoPro acted up on, and so did Harry's Lap Timer.
+
+Sessions 2 and 3 were much more straightforward. Everything worked as intended, I had a fun time playing with a 80's-90's Corvette and Camaro (was able to keep the 'Vette behind me, and the Camaro pushed too hard trying not to let me back by, and went off in front of me; he specifically ended up in some tall grass and his low pipes caught that on fire...).
+
+I largely worked on braking harder, later, and just getting my lines nailed consistently and comfortably. I didn't break 2m, which is really sad, to be honest, but there were parts of the track I was lifting in that I wish I didn't have to; the grip just wasn't there in the heat and with that much traffic/marbling (especially in 6 through 10B). 
+
+I'll have a follow-up data analysis devoted to that.
+
+I noticed my exhaust started sounding louder, which [I'm not a stranger to](/posts/2019/05/gingerman/), and figured something just went screwy with it again (even though I had just gotten a new header...) but whatever, just send it.
+
+Then, in the 4th session, I was coming around 7, 8, and 9, noticed I was going about 10MPH slower than I usually would be, and asked myself "am I down on power?"
+
+**BANG.**
+
+Lost all power, dead stick, coasted through 10B and far, far off the track.
+
+Wouldn't turn back over. Luckily, Daddy had come out to watch, and I was able to hitch a ride home with the majority of my gear. (Daddy needs to get a truck or something with towing capacity...)
+
+A good friend of mine bailed me out the next day and helped me tow her home; I actually had to go back a THIRD time to pick up the tire trailer.
+
+Further analysis shows: [she's so done.](https://i.imgur.com/ms949Wq.png)
+
+After 4 years of track days, 212,000 total miles, and about 40,000 miles of hard driving since I got her, she's given up on me. 
+
+_Requiescat in pace._
+
+We can rebuild her. We have the technology.
+
+((Special thanks to all my friends who either helped me through this weekend, or have volunteered to help with the next phase of her life.))
+
+_((NOTE: Album in progress. I'll remove this message when completed.))_
+
+<a href="https://www.youtube.com/watch?v=2ORaTSYXkSA" class="fas fa-sd-card fab-override fab-post-override"></a><a href="https://www.youtube.com/watch?v=2ORaTSYXkSA"> YouTube: Session 2, GOPRO RECORDING</a>  
+<a href="https://www.youtube.com/watch?v=M6yAJ0rYAYs" class="fas fa-sd-card fab-override fab-post-override"></a><a href="https://www.youtube.com/watch?v=M6yAJ0rYAYs"> YouTube: Session 3, GOPRO RECORDING</a>  
+<a href="https://photos.google.com/share/AF1QipP05MBiwexx7QPTW18ME1K09gGf_5pGt2D8EPja2TztuC1hvjpJiQFpEap1G60lJw?key=TTcxdE9wZ2pTSGsxLWxhN0JRSjhqb0VNUGVwWVRB" class="far fa-image fab-override fab-post-override"></a><a href="https://photos.google.com/share/AF1QipP05MBiwexx7QPTW18ME1K09gGf_5pGt2D8EPja2TztuC1hvjpJiQFpEap1G60lJw?key=TTcxdE9wZ2pTSGsxLWxhN0JRSjhqb0VNUGVwWVRB"> Google Photos Album</a>
