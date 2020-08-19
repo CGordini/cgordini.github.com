@@ -6,9 +6,9 @@ NOTE: This post should always be the latest-and-greatest post. Which will requir
 
 Kind of like the car...
 
-[1991 Mazda Miata 1.6L DOHC, 5-speed manual](https://i.imgur.com/TrwsdBr.jpg)  
+[1991 Mazda Miata 1.8L DOHC, 5-speed manual](https://i.imgur.com/TrwsdBr.jpg)  
 
-ENGINE: NONE - Blew the 1.6L :(
+ENGINE: 1996 ~160,000mi 1.8L
 
 EXHAUST: [Jackson Racing header](https://trackdogracing.com/header-jr.aspx) & [Racing Beat muffler/connecting pipe](https://mossmiata.com/1990-1997-miata/exhaust/exhaust-systems-mufflers-pipes-tips/power-pulse-muffler-by-racing-beat)
 
