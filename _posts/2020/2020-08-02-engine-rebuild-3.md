@@ -1,8 +1,6 @@
 ---
-title: Engine Rebuild, Week 3
+title: Engine Rebuild, Week 3 - BITS AND BOLTS
 ---
-
-**WEEK 3: BITS AND BOLTS**
 
 [Previous: INSTALL](/posts/2020/07/engine-rebuild-2/)
 

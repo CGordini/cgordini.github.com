@@ -1,8 +1,6 @@
 ---
-title: Engine Rebuild, Week 2
+title: Engine Rebuild, Week 2 - INSTALL
 ---
-
-**WEEK 2: INSTALL**
 
 [Previous: REMOVAL](/posts/2020/07/engine-rebuild-1/)
 

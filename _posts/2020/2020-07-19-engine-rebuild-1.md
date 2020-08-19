@@ -1,8 +1,6 @@
 ---
-title: Engine Rebuild, Week 1
+title: Engine Rebuild, Week 1 - REMOVAL
 ---
-
-**WEEK 1: REMOVAL**
 
 [As previously mentioned](/posts/2020/07/gingerman-1/), the Miata engine died a loud, angry death on the track, at around turn 9 of Gingerman Raceway.
 

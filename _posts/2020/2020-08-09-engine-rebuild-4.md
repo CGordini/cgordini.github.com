@@ -1,8 +1,6 @@
 ---
-title: Engine Rebuild, Week 4
+title: Engine Rebuild, Week 4 - GOGOGO
 ---
-
-**WEEK 4: GOGOGO**
 
 [Previous: BITS AND BOLTS](/posts/2020/08/engine-rebuild-3/)
 
