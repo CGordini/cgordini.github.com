@@ -14,7 +14,7 @@ So I rush-ordered a full front-component replacement kit from a _local_ Miata sp
 
 Timing belt/water pump, exposed (naughty, naughty):
 
-<a href="https://i.imgur.com/2XIjf5Q.png"><img src="https://i.imgur.com/2XIjf5Q.png"/></a>
+<a href="https://i.imgur.com/2XIjf5Q.png" data-fancybox><img src="https://i.imgur.com/2XIjf5Q.png"/></a>
 
 At which point it's just a matter of "replace/upgrade everything you took apart with the new bits, and *for the love of all that's holy don't mess up the timing*.
 
@@ -22,7 +22,7 @@ Luckily, there are tools for this, and guides, and YouTube, and very patient fri
 
 Reinstall the radiator, hook up all the piping, call a friend over and finish up installing all the mismatched 1.6L->1.8L conversion parts, and within 24 hours we were able to go from the "front" looking like the above picture, to looking like the following.
 
-<a href="https://i.imgur.com/XZWBUCb.png"><img src="https://i.imgur.com/XZWBUCb.png"/></a>
+<a href="https://i.imgur.com/XZWBUCb.png" data-fancybox><img src="https://i.imgur.com/XZWBUCb.png"/></a>
 
 If your thought is "that escalated quickly" - you'd be right! Not shown is installing the exhaust (bit annoying but again, been there, done that, got the t-shirt) and airbox (same) on the "right" side. Comparative to installing a _whole new freakin engine_, easy-mode.
 
@@ -30,4 +30,4 @@ Some more experimentation, tweaking, wailing and gnashing of teeth, and we DID s
 
 Today, **less than one month later**, I drove it out for a pleasure drive and gas-up.
 
-<a href="https://i.imgur.com/W1o60Mp.png"><img src="https://i.imgur.com/W1o60Mp.png"/></a>
+<a href="https://i.imgur.com/W1o60Mp.png" data-fancybox><img src="https://i.imgur.com/W1o60Mp.png"/></a>

@@ -18,7 +18,7 @@ Which is slightly different for 1.8L versus 1.6L -- I actually came across the a
 
 Fuel rail, some oil stuff, some coolant stuff, some electronic stuff, all hooked up.
 
-<a href="https://i.imgur.com/8stYE2Y.png"><img src="https://i.imgur.com/8stYE2Y.png"/></a>
+<a href="https://i.imgur.com/8stYE2Y.png" data-fancybox><img src="https://i.imgur.com/8stYE2Y.png"/></a>
 
 Installing the big metal intake was the most work and it sucked, no lies here. After breaking a TON of bolts in my amateur mechanic days, I'm a believer in the power of the torque wrench and listening when it says "don't turn the bolt any more!!!".
 
@@ -26,6 +26,6 @@ But that requires actually FITTING a torque wrench. SUCKS.
 
 Anyway, end result was it all worked.
 
-<a href="https://i.imgur.com/yxMXm5d.png"><img src="https://i.imgur.com/yxMXm5d.png"/></a>
+<a href="https://i.imgur.com/yxMXm5d.png" data-fancybox><img src="https://i.imgur.com/yxMXm5d.png"/></a>
 
 [Next: GOGOGO](/posts/2020/08/engine-rebuild-4/)

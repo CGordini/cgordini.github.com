@@ -12,9 +12,9 @@ Now, for data analysis *with a 1.8!* - both my [last running of the 1.6](/posts/
 
 *map gif tbd*
 
-<a href="https://i.imgur.com/d0jpGKt.png"><img src="https://i.imgur.com/d0jpGKt.png" alt="Map"/></a>
+<a href="https://i.imgur.com/d0jpGKt.png" data-fancybox><img src="https://i.imgur.com/d0jpGKt.png" alt="Map"/></a>
 
-<a href="https://i.imgur.com/Qp8Q818.png"><img src="https://i.imgur.com/Qp8Q818.png"  alt="GPS vs Speed (MPH)"/></a>
+<a href="https://i.imgur.com/Qp8Q818.png" data-fancybox><img src="https://i.imgur.com/Qp8Q818.png"  alt="GPS vs Speed (MPH)"/></a>
 
 Lines are damn close - you see where I swerve off-line with the 1.8, because point-bys were only allowed on driver's side this time around. Also...setting a fast lap *while* giving a point by is an interesting concept - usually you scrub that lap because you have to lift. There's a couple of small differences, but overall...same stuff, different day.
 
@@ -22,7 +22,7 @@ I was *absolutely heartbroken* that, with a ~30 HP gain and still running slicks
 
 So let's do a quick, in-depth look, best-lap-to-best-lap, why.
 
-<a href="https://i.imgur.com/20fF8Zb.png"><img src="https://i.imgur.com/20fF8Zb.png"  alt="1.6 v 1.8 In-Depth"/></a>
+<a href="https://i.imgur.com/20fF8Zb.png" data-fancybox><img src="https://i.imgur.com/20fF8Zb.png"  alt="1.6 v 1.8 In-Depth"/></a>
 
 The labels are pretty much all you need to know. 
 

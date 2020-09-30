@@ -14,7 +14,7 @@ But after the aforementioned prep, and some special 1.8L (94-97 Miata) engine to
 
 Dropped in:
 
-<a href="https://i.imgur.com/lVtn4FO.png"><img src="https://i.imgur.com/lVtn4FO.png"/></a>
+<a href="https://i.imgur.com/lVtn4FO.png" data-fancybox><img src="https://i.imgur.com/lVtn4FO.png"/></a>
 
 Not a lot of pictures here. It's all-or-nothing at this stage.
 
