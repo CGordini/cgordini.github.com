@@ -4,7 +4,9 @@ title:  Gingerman Track Day - Private
 
 To be fair, I did say it was ["too soon"](/posts/2020/10/grattan).  
 
-So when the opprotunity came across that I could be part of a very exclusive Gingerman event, with less than 20 cars guarenteed, less than 6 cars a session...well, I jumped on it. 
+So when the opportunity came across that I could be part of a very exclusive Gingerman event, with less than 20 cars guaranteed, less than 6 cars a session...  
+
+...well, I jumped on it (I also _maybe_ might have been coaxed by supportive friends).
 
 Made some calls, pulled some strings, loaded the Miata (and two spare sets of tires) on a trailer, and booked it out day-of to South Haven, MI to just enjoy the weather and promise of a traffic-free day.
 
