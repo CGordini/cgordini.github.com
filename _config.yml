@@ -1,6 +1,6 @@
 # Setup
 title: Cory Gordinier
-tagline: Professional software engineer, amateur mechanic and race car driver, tall person.
+tagline: Professional programmer, amateur car racing enthusiast.
 url: https://corygordinier.com
 baseurl: ""
 permalink: /posts/:year/:month/:title/
@@ -41,14 +41,14 @@ social:
     - title: instagram
       address: https://www.instagram.com/cgordini/
       class: fab fa-instagram fab-override
-    - title: twitter
-      address: https://www.twitter.com/cgordini/
-      class: fab fa-twitter fab-override
+    #- title: twitter
+    #  address: https://www.twitter.com/cgordini/
+    #  class: fab fa-twitter fab-override
     - title: twitch
       address: https://www.twitch.tv/cgordini
       class: fab fa-twitch fab-override
     - title: youtube
-      address: https://www.youtube.com/channel/UC8yxeZmwfM0Eao_TOIPJn0Q
+      address: https://www.youtube.com/@cgordini
       class: fab fa-youtube fab-override
     - title: github
       address: https://github.com/cgordini/

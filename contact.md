@@ -10,4 +10,4 @@ I am available via the following methods:
  <a href="https://m.me/Cory.Gordinier" class="fab fa-facebook-messenger fab-override a-override"></a><a href="https://m.me/Cory.Gordinier" class="a-override"> Facebook</a>
  <br/>
  <br/>
- <a href="https://www.twitter.com/cgordini" class="fab fa-twitter fab-override a-override"></a><a href="https://www.twitter.com/cgordini" class="a-override"> Twitter</a>
+ <a href="https://www.instagram.com/cgordini" class="fab fa-instagram fab-override a-override"></a><a href="https://www.instagram.com/cgordini" class="a-override"> Instagram</a>
