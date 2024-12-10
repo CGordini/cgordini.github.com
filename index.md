@@ -14,7 +14,7 @@ My overall goal is simply to earn a living and pay for my dog and my toys.
 
 ### Personally
 
-I am a proud dog-dad to a <a class="hover_img" href="/assets/images/cassie.jpg">lab/pit mix<span><img src="/assets/images/cassie.jpg" height="228px" width="345px"/></span></a>, and I either play video games (often streaming on Twitch), or watch others play games I neither have the time nor energy to beat. My main hobby revolves around <a class="hover_img" href="/assets/images/miata.jpg">my car<span><img src="/assets/images/miata.png" height="105px" width="283px"/></span></a>, which I wrench on in my garage and built from the ground up; then drive in open track days (OTDs) and high-performance driving events (HPDEs) throughout the state of Michigan. 
+I am a proud dog-dad to a <a class="hover_img" href="/assets/images/cassie.jpg">lab/pit mix<span><img src="/assets/images/cassie.jpg" height="228px" width="345px"/></span></a>, and I either play video games (often streaming on Twitch), or watch others play games I neither have the time nor energy to beat. My main hobby revolves around <a class="hover_img" href="/assets/images/miata.png">my car<span><img src="/assets/images/miata.png" height="105px" width="283px"/></span></a>, which I wrench on in my garage and built from the ground up; then drive in open track days (OTDs) and high-performance driving events (HPDEs) throughout the state of Michigan. 
 
 I've taken to competing in <a href="https://www.grid.life">#GRIDLIFE</a>, in the StreetMod class, and if you attend their Midwest Fest, come find me and say hi! I have a handful of sponsors I am incredibly grateful for, and wouldn't do this without their support.
 
