@@ -16,11 +16,11 @@ The resulting data, I find absolutely fascinating.
 
 Let's take a bit of a look at what was collected at [Waterford Hills earlier this spring](/posts/2020/05/waterford/), inside [Track Attack](https://trackattack.io/sessions):  
 
-[Map](https://i.imgur.com/nnJ9vdP.png)  
+<a href="https://i.imgur.com/nnJ9vdP.png" data-fancybox><img src="https://i.imgur.com/nnJ9vdP.png"  alt="Map"/></a>
 
-[Data](https://i.imgur.com/KpUAbb1.png)  
+<a href="https://i.imgur.com/KpUAbb1.png" data-fancybox><img src="https://i.imgur.com/KpUAbb1.png"  alt="Data"/></a>
 
-[Labeled Track Map](https://www.pngfind.com/pngs/m/234-2348116_waterford-hills-road-racing-track-racing-track-hd.png)  
+<a href="https://www.pngfind.com/pngs/m/234-2348116_waterford-hills-road-racing-track-racing-track-hd.png" data-fancybox><img src="https://www.pngfind.com/pngs/m/234-2348116_waterford-hills-road-racing-track-racing-track-hd.png"  alt="Labeled Track Map"/></a>
 
 We'll start with the map. The lines overlap _amazingly_ close. There's a little variance at point of apexing, and a couple of sections where there's some experimentation.
 
@@ -32,11 +32,11 @@ I *know* this track, and the only real gains I can make are in a handful of turn
 
 Compare and contrast to [Mid-Ohio](/posts/2020/06/mid-ohio/), again inside Track Attack:  
 
-[Map](https://i.imgur.com/q5EvhUG.png)  
+<a href="https://i.imgur.com/q5EvhUG.png" data-fancybox><img src="https://i.imgur.com/q5EvhUG.png"  alt="Map"/></a>
 
-[Data](https://i.imgur.com/aG1hnfZ.png)  
+<a href="https://i.imgur.com/aG1hnfZ.png" data-fancybox><img src="https://i.imgur.com/aG1hnfZ.png"  alt="Data"/></a>
 
-[Labeled Track Map](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Mid-Ohio.svg/1200px-Mid-Ohio.svg.png)  
+<a href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Mid-Ohio.svg/1200px-Mid-Ohio.svg.png" data-fancybox><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Mid-Ohio.svg/1200px-Mid-Ohio.svg.png"  alt="Labeled Track Map"/></a>
 
 Significantly less overlap. I don't know this track as well (or at all), and there's experimentation to just find a good line _at all_ -- and this is only using the _good_ sessions of the day, as opposed to where I was just fighting for grip in the wet that morning.
 
