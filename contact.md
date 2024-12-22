@@ -11,3 +11,10 @@ I am available via the following methods:
  <br/>
  <br/>
  <a href="https://www.instagram.com/cgordini" class="fab fa-instagram fab-override a-override"></a><a href="https://www.instagram.com/cgordini" class="a-override"> Instagram</a>
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+<h1 class="page-title"><a href="https://www.instagram.com/cgordini" class="far fa-file-pdf fab-override a-override"></a><a href="/assets/2025 Resume.pdf" class="a-override"> Résumé</a></h1>
