@@ -149,12 +149,11 @@ tbody tr:nth-child(odd) th {
 
 .logo {
   max-width: 40%;
-  margin-top: auto;
+  margin-top: 5px;
   margin-bottom: auto;
   float: left;
   padding-right: 10px;
   padding-bottom: 10px;
-  max-height: 100px;
 }
 
 .sponsorcontainer .row {
@@ -175,3 +174,8 @@ tbody tr:nth-child(odd) th {
   font-size: smaller;
   margin-top: -5px;
 }
+
+//TODO: Re-enable once I figure out cards
+// .card {
+//   min-height: 75px;
+// }
