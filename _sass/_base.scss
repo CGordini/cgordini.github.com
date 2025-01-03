@@ -146,3 +146,32 @@ tbody tr:nth-child(odd) th {
 .moveup {
   margin-bottom: -10px;
 }
+
+.logo {
+  max-width: 40%;
+  margin-top: auto;
+  margin-bottom: auto;
+  float: left;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  max-height: 100px;
+}
+
+.sponsorcontainer .row {
+  margin-right: -45px;
+  margin-left: -45px;
+}
+
+.sponsorcontainer {
+  font-size: smaller;
+}
+
+.sponsorcontainer i {
+  font-size: small;
+}
+
+.sponsor p {
+  display: inline-block;
+  font-size: smaller;
+  margin-top: -5px;
+}
