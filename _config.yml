@@ -61,6 +61,7 @@ nav:
   - name: contact
     # label: contact me
   - name: racing
+    label: racing
   - name: sponsors
   # - name: posts
 
