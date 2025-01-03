@@ -8,7 +8,7 @@ I have progressed from a novice intimidated by everything on-track, to an instru
 
 This marks my second year competing in <a href="https://www.grid.life">#GRIDLIFE</a> ((Track Battle: Street Mod)).
 
-<div class="tinybreak"/>
+<div class="tinybreak"></div>
 
 <h1 class="page-title moveup">The Car</h1>
 

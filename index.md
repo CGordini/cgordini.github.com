@@ -6,7 +6,7 @@
 
 I am a proud alumnus of the University of Michigan (Class of 2014), having received my Bachelors of Science in Engineering from their College of Computer Science. 
 
-I am currently looking for employment after working as a (senior) software engineer for Thomson Reuters for a decade; you can find my resume on my Contact page.
+I am currently looking for employment after working as a (senior) software engineer for Thomson Reuters for a decade; you can find my resume on my <a href="/contact.html">Contact</a> page.
 
 My speciality there was programming in C#, developing various features, while also focusing on creation and automation of a build platform that allowed our product to have testable nightlies. I built this platform from the ground up, involving many layers of scripts interacting with a YAML build pipeline, Git repositories, and Azure Dev Ops build agents hosted on AWS EC2 instances. 
 
