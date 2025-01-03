@@ -1,5 +1,5 @@
 ---
-#title: Sponsors
+title: Sponsors
 ---
 
-### The Sponsors
+TBD
