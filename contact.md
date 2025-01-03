@@ -17,4 +17,4 @@ I am available via the following methods:
 <br/>
 <br/>
 
-<h1 class="page-title"><a href="https://www.instagram.com/cgordini" class="far fa-file-pdf fab-override a-override"></a><a href="/assets/2025 Resume.pdf" class="a-override"> Résumé</a></h1>
+<h1 class="page-title" id="resume"><a href="/assets/2025 Resume.pdf" class="far fa-file-pdf fab-override a-override"></a><a href="/assets/2025 Resume.pdf" class="a-override"> Résumé</a></h1>
