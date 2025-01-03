@@ -133,8 +133,16 @@ tbody tr:nth-child(odd) th {
 }
 
 .profile {
-  display: inline-block;
   max-width: 25%;
   float: left;
   margin: 0 20px 0px 0;
+}
+
+.tinybreak {
+  margin-bottom: 15px;
+  display: flex;
+}
+
+.moveup {
+  margin-bottom: -10px;
 }

@@ -1,8 +1,6 @@
 ---
-#title: Racin'
+title: The Driver
 ---
-
-### The Driver
 
 <img class="profile" src="/assets/images/cory.jpg"/> I've always liked cars, ever since I was driving Hot Wheels on my city carpet. I taught myself how to do basic wrenching on my first car, a 1999 Pontiac Grand Am coupe, got into drag racing with my 2007 Ford Mustang, and in spring of 2016, I went to my first Open Track Day. I've been hooked ever since, now running in my heavily modified 1991 Mazda MX-5 Miata.
 
@@ -10,7 +8,9 @@ I have progressed from a novice intimidated by everything on-track, to an instru
 
 This marks my second year competing in <a href="https://www.grid.life">#GRIDLIFE</a> ((Track Battle: Street Mod)).
 
-### The Car
+<div class="tinybreak"/>
+
+<h1 class="page-title moveup">The Car</h1>
 
 <img src="/assets/images/SYN_corytake-V3.png"/>
 
