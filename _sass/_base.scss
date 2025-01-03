@@ -131,3 +131,10 @@ tbody tr:nth-child(odd) th {
     background-color: #2d2d2d;
   }
 }
+
+.profile {
+  display: inline-block;
+  max-width: 25%;
+  float: left;
+  margin: 0 20px 0px 0;
+}

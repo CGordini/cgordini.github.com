@@ -81,6 +81,7 @@ GEM
     terminal-table (1.8.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
     unicode-display_width (1.7.0)
+    wdm (0.2.0)
 
 PLATFORMS
   ruby
@@ -91,6 +92,7 @@ DEPENDENCIES
   jekyll-gist
   jekyll-seo-tag
   jekyll-target-blank
+  wdm (>= 0.1.0)
 
 BUNDLED WITH
    2.1.4

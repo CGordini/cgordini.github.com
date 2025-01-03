@@ -60,7 +60,9 @@ nav:
   - name: about
   - name: contact
     # label: contact me
-  - name: posts
+  - name: racing
+  - name: sponsors
+  # - name: posts
 
 author:
   name: Cory Gordinier
