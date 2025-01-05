@@ -1,6 +1,8 @@
 ---
-title: The Driver
+#title: Racing
 ---
+
+<h1 class="page-title">The Driver</h1>
 
 <img class="profile" src="/assets/images/cory.jpg"/> I've always liked cars, ever since I was driving Hot Wheels on my city carpet. I taught myself how to do basic wrenching on my first car, a 1999 Pontiac Grand Am coupe, got into drag racing with my 2007 Ford Mustang, and in spring of 2016, I went to my first Open Track Day. I've been hooked ever since, now running in my heavily modified 1991 Mazda MX-5 Miata.
 
